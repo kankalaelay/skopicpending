@@ -1,0 +1,14 @@
+.SocailModals .modal-content{
+    width:800px;
+    min-height:20px
+}
+.SocailModals p{
+    text-align:center;
+}
+.SocailModals button{
+    margin-left:180px;
+    border:none;
+    background-color:#2181ce;
+    color:#fff
+
+}

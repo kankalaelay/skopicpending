@@ -1,0 +1,29 @@
+.sidebarOption{
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 0px !important;
+}
+
+.sidebarOption>.sidebarbuttons:hover{
+background-color:white;
+border-radius: 30px;
+color: #50b7f5;
+transition: color 100ms ease-out;
+border: none;
+}
+
+
+.sidebarOption>.sidebarbuttons{
+border-radius: 15px;
+font-weight: 500;
+font-size: 1.0625rem;
+margin-right: 20px;
+border: none;
+outline: none;
+}
+
+.sidebarOption--active>.sidebarbuttons{
+color: #50b7f5;
+font-weight: bold;
+border: none;
+}

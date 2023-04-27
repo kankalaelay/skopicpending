@@ -1,0 +1,59 @@
+
+.carousel-demo .product-item .product-item-content {
+    /* border: 1px solid var(--surface-d); */
+    border-radius: 3px;
+    margin: .3rem;
+    text-align: center;
+    padding: 0.2rem 0;
+}
+
+.carousel-demo .product-item .product-image {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+/* .p-carousel[pr_id_2] .p-carousel-item {
+    flex: 0 0 33.333333% !important;
+    max-width: 33.333333% !important;
+} */
+.p-carousel-items-container {
+    flex-wrap: wrap;
+    display: flex;
+}
+.p-carousel-indicators {
+    display: none;
+}
+.carousel-demo .card {
+    background: #FFFFFF;
+    border-radius: 20px;
+    border: solid 1px #DEE0E1;
+    padding: 15px;
+    /* display: flex;
+    align-items: center; */
+}
+.p-carousel  .p-carousel-content .p-carousel-prev, .p-carousel .p-carousel-content .p-carousel-next {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.slick-slider{
+    border: solid 1px #DEE0E1;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    background: #FFFFFF;
+}
+.slick-arrow {
+    width: 20px;
+    height: 20px;
+}
+.slick-arrow::before {
+    content: " ";
+}
+.slick-prev,.slick-prev:hover, .slick-prev:focus{
+    left:0;
+    background: url(../../images/Prev-Button.svg) right center no-repeat;
+}
+.slick-next, .slick-next:hover, .slick-next:focus{
+    right: 0;
+    background: url(../../images/Next-Button.svg) left center no-repeat;
+}

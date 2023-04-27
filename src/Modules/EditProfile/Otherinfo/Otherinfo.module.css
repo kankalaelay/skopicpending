@@ -1,0 +1,100 @@
+.basicinfo{
+    width:661px;
+   min-height:250px;
+    padding:25px ;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow:   5px 5px 10px #d5d5d5,
+    -5px -5px 10px #ebebeb;
+    font-family: Helvetica;
+    margin-top: 40px;
+}
+.infoDetals{
+    display:flex;
+    justify-content: space-between;
+}
+.infoHead{
+    font-size: 20px;
+    font-weight: bold;
+}
+.EditButton{
+    position: relative;
+    width: 36px;
+    height:36px;
+    background-color: #EFEEED;
+    border-radius: 50px;
+    padding: 50px 10px;
+    cursor: pointer;
+}
+.EditButton img{  
+    position:absolute;
+    top: 50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.BasicDetails{
+    padding-top: 10px;
+}
+.EditDetails{
+    padding-top: 20px;
+}
+.EditInputfeild{
+    width: 590px;
+    margin: auto;
+    margin-bottom:20px;
+}
+.EditSelectFeild{
+    width: 100%;
+    background-color: white;
+    border-radius: 50px;
+    border:2px solid  grey;
+    font-size: 16px;
+    padding:11px;
+}
+.EditSubSelectFeild{
+    width: 30%;
+    background-color: white;
+    border-radius: 50px;
+    border:2px solid  grey;
+    font-size: 16px;
+    padding:11px;
+    margin-right: 15px;
+}
+.EditInputfeild input{
+    width:100%;
+    border-radius: 50px;
+    border:2px solid  grey;
+    font-size: 16px;
+    padding:11px;
+}
+.EditName{
+    display: block;
+    margin-left: 20px;
+}
+.EditTextfeild{
+    width: 590px;
+    margin: auto;
+    margin-bottom:20px;
+}
+.EditTextfeild  textarea{
+    width:100%;
+    border-radius: 20px;
+    border:2px solid  grey;
+    font-size: 16px;
+    padding:11px;
+}
+.SaveButton{
+    width: 88px;
+    height:33px;
+    border:none;
+    border-radius:20px; 
+    background-color: #4795DE;
+    color:white;
+    margin-left: 270px;
+    cursor: pointer;
+}
+
+
+

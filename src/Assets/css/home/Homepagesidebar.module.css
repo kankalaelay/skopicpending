@@ -1,0 +1,247 @@
+body {
+    background-color:#F3F2F0 ;
+}
+
+
+
+.Profile {
+    justify-content: space-around;
+    margin:12px 0px 20px 0px;
+    /* width:247px; */
+    /* max-width: 57%; */
+    padding: 26px;
+    /* height: 150px; */
+    background-color: #FFFFFF;
+    border: solid 1px #DEE0E1;
+    border-radius: 20px;  
+}
+.communitycontainer{
+    justify-content: flex-start;
+    margin:12px 0px 25px 0px;
+    /* width:247px; */
+    /* max-width: 57%; */
+    padding: 26px;
+    /* height: 150px; */
+    background-color: #FFFFFF;
+    border: solid 1px #DEE0E1;
+    border-radius: 20px;
+    height: 407px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+.communitycontainer::-webkit-scrollbar {
+    width: 0px;
+    }
+
+
+
+.ProfileInfo {
+    display: flex;
+}
+
+.Profileimg {
+    border: 1px solid #707070;
+    border-radius: 15px;
+    width: 47px;
+height: 54px;
+
+}
+.Profileimg>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.profilename {
+    letter-spacing: 0px;
+color: #373334;
+font-size: 16px;
+font-weight: 500;
+line-height: 1;
+margin-bottom: 6px;
+}
+.ProfileCounts, .ProfileSummary {
+    letter-spacing: 0px;
+color: #373334;
+font-size: 12px;
+}
+.ProfileDetails {
+    margin-left: 12px;
+}
+
+.ProfileActivity span {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.ProfileSummary {
+    padding-top: 10px;
+    font-weight: 400;
+}
+.ProfileSummary>p{
+    padding: 0px 5px 0px 5px;
+    
+}
+
+.Community {
+    /* display: flex; */
+    /* max-width: 57%; */
+    /* width:247px; */
+    /* / height: 345px; / */
+    /* margin: 20px 30px; */
+    margin: 20px 00px;
+    /* width:247px; */
+    padding: 20px;
+    background-color: #EFEEED;
+    border: none;
+    border-radius: 20px;
+    box-shadow: -2px -3px 6px #FFFFFF, 2px 3px 10px #00000029;
+}
+
+.communitydivs{
+    display: flex;
+flex-flow: row wrap;
+}
+
+.Name {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.CommunitySelction {
+    display: inline-block;
+    max-width: 86px;
+    margin: 5px 1px 5px 1px;
+    background-color: #EFEEED;
+    padding:0px;
+    border-radius: 15px;
+    border: solid 2px RGBA(0,0,0,0);
+    box-shadow: -2px -3px 6px #FFFFFF, 0px 3px 6px #00000026;
+    cursor: pointer;
+}
+
+.CommunitySelction>p{
+    font-size:12px;   
+    letter-spacing: 0px;
+    color: #000000;
+    
+padding-left: 7px;
+padding-top: 4px;
+}
+.crad-col.col-6 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.CommunitySelction>img{
+    width: inherit;
+    border-radius: 15px;
+    height: 82px;
+    width: 82px;
+}
+.communitycard {
+    margin:10px;
+}
+
+.CommunityImage {
+    /* width: 82px;
+    height: 82px; */
+    width: fit-content;
+}
+
+.AddCommunityLink{
+    background: #e1f0f2;
+    color-adjust: 1px;
+    align-items: center;
+    border-radius: 14px;
+}
+
+.AddCommunityimage{
+    
+    background: lightblue;
+    border-radius: 15px;
+
+padding: 2vw;
+
+}
+/* .CommunityImage img {
+    width: 100%;
+    height: 100%;
+} */
+
+.Communityname p {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0 0 0 5px;
+}
+
+.CommunitySelction:hover{
+    border-radius: 15px !important;
+border: 2px solid #4795DE;
+}
+.communitySelected{
+        border-radius: 17px !important;
+border: 2px solid #4795DE;
+}
+
+.footer {
+    font-size: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 80px 0px 10px 7px;
+    
+    padding: 14px 0px 20px 8px;
+    
+    /* background-color: white; */
+    
+    /* box-shadow: 3px 3px 3px rgb(163, 177, 198, 0.6),
+    -6px -6px 12px rgba(255, 255, 255, 0.5); */
+}
+
+.footer>span {
+
+    font-size: 0.9rem;
+    font-weight: lighter;
+    padding-top: 26px;
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+/* .footer div {
+    height: 11px;
+    margin-bottom: 5px;
+    border-right: 1px solid;
+    padding: 3px;
+} */
+
+/* .footer div:last-child {
+    border: none;
+} */
+
+.footer P {
+    margin: 0;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+
+.CommunityImage>.followcommunityimage {
+    height: 92px;
+}
+.mycommunities{
+    width: -webkit-fill-available;
+    
+    margin: 0px 0px 10px 14px;
+    width: -moz-available;
+}
+.userprofilename{
+
+    margin-bottom: 0;
+    
+}
+
+.editBioTextArea{
+    display: none;
+}

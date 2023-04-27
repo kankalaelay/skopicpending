@@ -1,0 +1,19 @@
+.tab-list-item {
+   padding: 10px 20px;
+   cursor: pointer;
+   width: 50%;
+   text-align: center;
+ }
+ .tab-list-active {
+
+  box-shadow: 0px 3px 6px #FFFFFFA5;
+  border-radius: 24px;
+    color:white; 
+    background: transparent linear-gradient(123deg, #6CA8E1 0%, #4795DE 49%, #0071DD 100%) 0% 0% no-repeat padding-box;; 
+    }
+    /* Media Quries */
+    @media (max-width:1024px){
+      .tab-list-item {
+          padding: 10px 20px;
+      }  
+  }

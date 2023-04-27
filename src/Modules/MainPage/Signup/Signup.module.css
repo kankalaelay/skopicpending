@@ -1,0 +1,273 @@
+.Signup{
+    width:100%;
+    margin:auto;
+  
+}
+.SignupForm{
+    width: 304px;
+    margin: auto;
+    border: none;
+    padding: 10px 40px;
+    font-weight: 700;
+}
+.SignupForm input, .SignupForm select{
+    width: 100%;
+    border:0;
+    background-color: transparent;
+    font-size: 16px;
+    color: #000000;
+}
+.SignupForm select {
+    color: RGBA(0,0,0,0.5);
+}
+.SignupForm select:focus{
+    outline: none;
+}
+.SignupForm input:focus{
+    outline: none;
+}
+.SignupButton:disabled{
+    background-color: #cccccc;
+    color:#666666;
+    cursor: not-allowed;
+}
+.SignupFormElemnts{
+    width:100%;
+    padding:10px 5px;
+    border-bottom:1px solid RGBA(0,0,0,0.5); 
+    margin-bottom:3px
+}
+.DefaultCommunity{
+    width:100%;
+    padding:10px;
+}
+.SignupButton{
+    margin: 20px auto 0 auto ;
+    padding: 13px 30px;
+    background-color: #F3F2F0;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 2px 3px 10px #00000029,  -2px -3px 6px #FFFFFF;
+    color: #4795DE;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    width: 134px;
+    display: block;
+}
+
+.SignupButton:focus{
+    outline: none;
+}
+.TandC{
+    margin-top:20px;
+    font-size: 12px;
+}
+.TandC p{
+    text-align: center;
+    font-size: 10px;
+}
+.TandC span{
+    color: #4795DE
+}
+.Changesignin {
+    margin-top: 20px;
+    position: relative;
+    width: fit-content;
+margin: 0 auto;
+
+  }
+  .Changesignin p {
+    position: relative;
+    margin: 20px 0;
+  }
+  .Changesignin p span {
+    position: relative;
+    display: block;
+    font-size: 12px;
+  }
+  .Changesignin p span::before ,
+  .Changesignin p span::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    
+    width: calc(70% - 50px);
+    height: 1px;
+    background: #696969;
+  }
+  .Changesignin p span::before {
+    left: 0;
+    margin-right:50px
+  }
+  .Changesignin p span::after {
+    right: 0;
+    margin-left:50px
+  }
+  .Changesignin p {
+    text-align: center;
+  }
+.Signinicon{
+    margin-top:20px;
+}
+.googleicon{
+    width: 44px;
+    cursor: pointer;
+}
+.facebookicon{
+    margin-left:15px;
+    width: 44px;
+    cursor: pointer;
+}
+.footerElemnts{
+    font-size: 12px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #373334;
+  }
+  .footerLinks {
+    margin-bottom: 20px;
+  }
+  .footerLinks a{
+    color: #373334;
+    font-size: 12px;
+    padding: 2px 4px;
+  }
+/* Media Quries */
+@media (max-width:1024px){
+    .SignupForm{
+        width: 100%;    
+    } 
+    .TandC{
+        margin-top:10px;
+        font-size: 10px;
+    } 
+    .Signinicon{
+        padding-left:100px;
+        margin-top:20px;
+    }
+    .Changesignin{
+        margin-top: 70px;
+        position: relative;
+        margin-left: 20px;
+    }
+    .Changesignin::before{
+        content:"" ;
+        position: absolute;
+        top:9px;
+        left:90px;
+        width: 30px;
+        height: 0px;
+        border:1px solid;
+    
+    }
+    .Changesignin::after{
+        content:"" ;
+        position: absolute;
+        top:9px;
+        right:90px;
+        width: 30px;
+        height: 0px;
+        border:1px solid;
+    
+    }
+}
+@media (max-width:768px){
+    .Signup{
+        width:70%;
+    }
+    .SignupFrom{
+        width: 100%;
+    }  
+    .Changesignin{
+        margin-top: 70px;
+    }
+}
+@media (max-width:425px){
+    .Changesignin{
+        margin-top: 70px;
+    }
+}
+@media (max-width:375px){
+
+    .SignupButton{
+        margin:60px 20px 15px 60px;
+    }
+    .TandC{
+        margin-top:10px;
+        font-size: 10px;
+    } 
+    .Signinicon{
+        padding-left:100px;
+        margin-top:20px;
+    }
+    .Changesignin{
+        margin-top: 80px;
+        position: relative;
+        margin-left: 0;
+    }
+    .Changesignin::before{
+        content:"" ;
+        position: absolute;
+        top:9px;
+        left:90px;
+        width: 30px;
+        height: 0px;
+        border:1px solid;
+    
+    }
+    .Changesignin::after{
+        content:"" ;
+        position: absolute;
+        top:9px;
+        right:90px;
+        width: 30px;
+        height: 0px;
+        border:1px solid;
+    
+    }
+
+}
+@media (max-width:320px){
+    .Signin{
+        width:100%;
+    }
+    .SigninFrom{
+        width: 80%;
+    } 
+    .SignupButton{
+        margin:60px 20px 15px 40px;
+    }
+    .Signinicon{
+        padding-left:80px;
+        margin-top:20px;
+    }
+    .Changesignin{
+        margin-top: 80px;
+        position: relative;
+        margin-left: 0;
+    }
+    .Changesignin::before{
+        content:"" ;
+        position: absolute;
+        top:9px;
+        left:120px;
+        width: 40px;
+        height: 0px;
+        border:1px solid;
+    
+    }
+    .Changesignin::after{
+        content:"" ;
+        position: absolute;
+        top:9px;
+        right:120px;
+        width: 40px;
+        height: 0px;
+        border:1px solid;
+    
+    }
+}

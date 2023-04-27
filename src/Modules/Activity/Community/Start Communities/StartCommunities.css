@@ -1,0 +1,229 @@
+.StartCommunity{
+    position: fixed; 
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow-y: scroll;
+    background-color: rgb(122,121,120,0.5);
+    opacity: 1;
+    visibility: visible;
+    font-family:  Helvetica, sans-serif;
+    -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+    -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+    transition: opacity 0.3s 0s, visibility 0s 0s;
+    z-index:10;
+    
+}
+.StartCommunity-Container{
+    display: block;
+    width: 705px;
+    margin: 0 auto;
+    z-Index: 999;
+    background-color:#FFFFFF;
+    padding: 10px 20px 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+   
+}
+.StartCommunity-ContainerNone{
+    display: none;
+}
+.StartCommunity-Header{
+    display: flex;
+    justify-content: space-between;
+
+}
+.StartCommunity-Header--Close{
+    margin-bottom: 8px;
+    padding: 3px 8px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    align-self: flex-end;
+    background-color: #F3F2F0;
+    border:none;
+}
+.StartCommunity-Body{
+padding:10px;
+}
+.StartCommunity-Body--Intialinfo{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.StartCommunity-Body--Intialinfo p{
+    font-size: 13px;
+}
+.StartCommunity-CommunityImage{
+    position:relative;
+    width: 91px;
+    height: 91px;
+    border:7px solid #EBF3FB;
+    background-color: #FEFEFE;
+    border-radius:8px;
+}
+.StartCommunity-CommunityImage img{
+    margin: 10px;
+}
+.StartCommunity-CommunityImage .Camera-Icon{
+    position: absolute;
+    display: flex;
+    align-items: center;
+   top:65px;
+   left: 65px;
+    width:26px;
+    height:26px;
+    border:2px solid #fff;
+    border-radius: 50%;
+}
+.Camera-Icon img{
+
+}
+.indicatorImportant{
+    color:#4795DE
+
+}
+.StartCommunity-Body--CommunityType{
+    /* border:1px solid red; */
+    /* margin-right: 40px; */
+}
+.StartCommunity-CommunityOptions input{
+    margin-right: 20px;
+}
+.StartCommunity-CommunityOptions span{
+    display: block;
+    font-size: 15px;
+    color:grey;
+    margin-left: 40px;
+}
+.EditInputfeild{
+    margin-top: 10px;
+}
+.EditInputSubfeild{
+    margin-top: 10px;
+    display: inline-block;
+    width:48%;
+
+}
+.EditInputSubfeild:nth-of-type(even){
+    margin-left: 20px;
+}
+
+.EditInputfeild input{
+    width:100%;
+    border-radius: 50px;
+    border:1px solid  #707070;
+    font-size: 16px;
+    padding:11px;
+}
+.EditInputSubfeild input{
+    width:100%;
+    border-radius: 50px;
+    border:1px solid  #707070;
+    font-size: 16px;
+    padding:16px;
+}
+.EditName{
+    margin-left: 20px;
+}
+
+    .EditNameDesc{
+        margin-top:20px;
+        margin-left: 20px;
+    }
+.EditTextfeild  {
+    margin: 10px auto;
+    width:100%;
+    border-radius: 20px;
+    border:1px solid  #707070;
+    font-size: 16px;
+    padding:16px;
+    resize: none;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+    font-size: 15px;
+}
+
+.EditSelectFeild{
+    width: 100%;
+    background-color: white;
+    border-radius: 50px;
+    border:1px solid  #707070;
+    font-size: 16px;
+    padding:11px;
+}
+.Submit{
+    margin: 30px auto ;
+    margin-bottom: 0px;
+}
+.Submit button{
+    width: 88px;
+    height:33px;
+    border:none;
+    border-radius:20px; 
+    background-color:#98B9D8 ;
+    color:white;
+    margin-left: 270px;
+    cursor: pointer;
+}
+.Submit span{
+    display: inline-block;
+    margin-left: 200px;
+}
+.Second{
+    display: none;
+}
+.Second--active{
+    display: block;
+}
+.EditSubSelectFeild{
+    width: 30%;
+    background-color: white;
+    border-radius: 50px;
+    border:1px solid  #707070;
+    font-size: 16px;
+    padding:11px;
+    margin-right: 15px;
+}
+.EditInputfeild .PhoneTextFeild{
+    width:65%;
+    border-radius: 50px;
+    border:1px solid  #707070;
+    font-size: 16px;
+    padding:11px;
+    
+}
+  .CommunityGuidlines {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.CommunityGuidlines div{
+    text-align: center;
+}
+.CommunityGuidlines div:last-child{
+    margin-top: 20px;;
+}
+.EditSelectFeild select{
+    width: 80%;
+    border:0;
+    background-color: transparent;
+    font-size: 18px;
+}
+.StartCommunityErrorMsg{
+    display: block;
+    font-size:12px;
+    color:red;
+    margin-top:5px;
+    margin-left:20px;
+}
+.StartCommunityErrorMsgHidden{
+    display: none;
+}

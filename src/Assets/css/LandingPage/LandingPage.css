@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+.Landingpage{
+  background-color: white;
+}
+.Switch {
+  width: 90%;
+  display: flex;
+  margin: auto;
+}
+.Navbar{
+  width: 100%;
+  height:80px;
+  background-color: #F3F2F0;
+}
+.Logo{
+  padding:25px ;
+}
+.content{
+width:100%;
+/* border: solid 1px ; */
+font-family: 'Rubik', sans-serif;
+}
+.mainHeading{
+  margin:50px 0px 20px 0px;
+  font-size: 45px;
+  font-weight: bold;
+}
+.mainText{
+  font-size: 20px;
+  line-height: 30px;
+
+}
+.imageContent{
+  display:flex;
+}
+.image{
+  width:25%;
+  height: 10%;
+}
+.image img{
+  width: 100%;
+  height: 100%;
+}
+.information{
+  background-color: #F3F2F0;
+  min-height: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+.info-content{
+  text-align: center;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.info-img{
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-content p{
+  width: 100%;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  line-height: 25px;
+  margin-top: 10%;
+}
+
+.contentImage{
+  height: 400px;
+}
+.contentImage img{
+  max-width: 500px;
+}
+.contentList{
+  list-style-type: none;
+  width: 80%;
+  margin: 0px;
+  margin-left: 10%;
+
+}
+.contentInfo{
+  padding-top:8%
+}
+.contentListItems{
+  background-image: url(../../images/LandingPageImages/Arrow.svg);
+  background-size: 20px;
+  background-repeat: no-repeat;
+	background: position 0px 20px;
+
+  margin-bottom: 20px;
+  line-height: 25px;
+  font-size: 18px;
+  font-family: 'Rubik', sans-serif;
+  letter-spacing: 1px;
+  padding-left: 40px;
+}
+.footer{
+  background-color: #F3F2F0;
+  padding:40px 0;
+  text-align: center;
+}
+.skopicInfo{
+  width: 90%;
+  min-height: 200px;
+  border-radius: 20px;
+  margin: auto;
+  background-color: white;
+  padding: 50px;
+}
+.skopicInfo p {
+  font-size: 24px;
+  color:#373334;
+  font-weight: 700;
+}
+.SocailSignIn{
+  width:200px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EFEEED;
+  cursor: pointer;
+  border-radius: 20px;
+  margin:20px auto 0 auto;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+}
+.demoImge{
+  width: 32px;
+  margin-left: 10px;
+}
+.mobileLinks{
+  margin: auto;
+}
+.mobileLinks img{ 
+  width: 127px;
+  margin:0 10px;
+}
+.socialLinks{
+  margin: auto;
+}
+.socialLinks img{
+  width: 35px;
+  margin:0 10px;
+}
+.appLinks{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  margin: auto;
+  margin-top: 2%;
+  /* border:1px solid ; */
+}
+.copyright{
+  margin-top: 2%;
+}
+.copyrightRules{
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+}
+@media (max-width:768px){
+  .skopicInfo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .skopicInfo p{
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  .contentImage {
+    text-align: center;
+    height: auto;
+  }
+  .contentImage img {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .contentList {
+    margin: 0;
+    width: 100%;
+  }
+}

@@ -1,0 +1,411 @@
+
+
+.content{
+    position: relative;
+}
+
+
+
+.container{
+    position:relative;
+    width: 100%;
+    /* width: 278px; */
+    /* height: 150px; */
+    padding-top: 9px;
+}
+
+.rect{
+    overflow: scroll;
+    position: sticky;
+    height:726px;
+    width: 100%;
+    position: absolute;
+    /* width: 645px; */
+    /* height: 150px; */
+    background: #E5E4E2;
+    /* border: 1px solid #000; */
+    z-index: 5;
+    border-radius: 20px 0px 0px 0px;
+    border: solid 1px #DEE0E1;
+    
+    scrollbar-width: none;
+    scrollbar-color:#6b71c9;
+}
+.rect::-webkit-scrollbar {
+    width: 0px;
+    }
+
+    .roundcontentandroundborder{
+        position: relative;
+    }
+.roundcontent{
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    width: 50%;
+    height: 56px;
+    background: #E5E4E2;
+    z-index: 6;
+    text-align: center;
+    border-radius: 25px 25px 0px 0px;
+    justify-content: space-evenly;
+    display: inline-flex;
+    padding: 4px;
+    border: solid 1px #DEE0E1;
+    border-bottom: none;
+}
+.asksayNav>ul{
+    list-style: none;
+    margin: 2px 0 0 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
+}
+.asksayNav>ul>li {
+    display: inline-block;
+}
+.asksayNav>ul>li>a {
+    color: #373334;
+    text-transform: uppercase;
+    font-size: 11px;
+    width: 75px;
+    display: block;
+    text-align: center;
+    padding-top:24px;
+    cursor: pointer;
+    border-radius: 26px;
+    padding-bottom: 4px;
+}
+.asksayNav>ul>li.ask a{
+    background:url(../../images/ask.svg) center 4px no-repeat;
+}
+.asksayNav>ul>li.say a{
+    background:url(../../images/say.svg) center 4px no-repeat;
+}
+.asksayNav>ul>li.update a{
+    background:url(../../images/update.svg) center 4px no-repeat;
+}
+.asksayNav>ul>li.tag a{
+    background:url(../../images/tag.svg) center 4px no-repeat;
+}
+.roundborder{
+    border: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 52px;
+    z-index: 4;
+    text-align: center;
+    border-radius: 25px 25px 0px 0px;
+    border: solid 1px #DEE0E1;
+
+}
+
+.filterbuttons{
+
+    padding-top: 7px;
+    position: absolute;
+    /* box-shadow: 2px 3px 6px darkgrey; */
+    width: 295px;
+    border-radius: 25px 25px 0px 4px;
+    right: 0px;
+    top: 65px;
+    display: inline-flex;
+    z-index: -2;
+    bottom: 3px;
+    justify-content: space-evenly;
+}
+  .filterbuttons>span{
+padding: 0px 0px 0px 8px; 
+  }
+  .images{
+    box-shadow: 2px 3px 6px darkgrey;
+
+  }
+
+  /* @media all and (max-width: 1440px){
+     
+    .roundcontent{
+        top: -55px;
+        left: 377px !important;
+        width: 45.3%;
+    }
+    .roundborder{
+        top:-56px;
+        left: 377px !important;
+        width: 45.3%;
+    }
+    }
+    @media all and (max-width: 1366px){
+     
+        .roundcontent{
+            left: 353px !important;
+        }
+        .roundborder{
+            left: 354px !important;
+        }
+        }
+        @media all and (max-width: 1200px){
+     
+            .roundcontent{
+                left: 312px !important;
+                width: 45.3% !important;
+
+
+            }
+            .roundborder{
+                left: 313px !important;
+                width: 45.3% !important;
+            }
+            }
+    
+   @media all and (max-width: 1024px){
+  
+.roundcontent{
+    top: -55px;
+    left: 220px;
+    width: 54.3%;
+}
+.roundborder{
+    top: -58px;
+    left: 226px;
+    width: 53.3%;
+   
+}
+}
+
+@media all and (max-width: 1280px){
+     
+    .roundcontent{
+        top: -55px;
+        left: 334px;
+        width: 45.3%;
+    }
+    .roundborder{
+        top:-56px;
+        left: 334px;
+        width: 45.3%;
+    }
+    } */
+/* 
+    @media all and (max-width: 800px){
+        .rect{
+            width: 370px;
+        }  
+        .roundcontent{
+            top: -46px;
+            left: 153px;
+            width: 78%;
+        }
+        .roundborder{
+            top:-45px;
+            left: 152px;
+            width: 77%;
+        }
+        } */
+
+        /* @media all and (max-width: 1440px){
+            .rect{
+                width: 690px;
+            }  
+            .roundcontent{
+
+                width: 116%;
+            }
+            .roundborder{
+                width: 116%;
+            }
+            } */
+/* 
+            @media all and (max-width: 1280px){
+                .rect{
+                    width: 610px;
+                }  
+                .roundcontent{
+    left: 332px;
+                    width: 100%;
+                }
+                .roundborder{
+                    top: -45px;
+                    width: 100%;
+                    left: 332px;
+                }
+                } */
+/* @media all and (max-width: 1440px){
+    .rect{
+        width: 690px;
+    }  
+    .roundcontent{
+        top: -46px;
+        left: 412px;
+    }
+    .roundborder{
+        top:-46px;
+        left: 413px;
+    }
+    } */
+
+
+    /* @media all and (max-width: 2560px){
+        .rect{
+            width: 1263px;
+        }  
+        .roundcontent{
+            top: -46px;
+            left: 735px;
+            width: 190%;
+        }
+        .roundborder{
+            top:-46px;
+            left: 735px;
+            width: 190%;
+        }
+        } */
+/* 
+ @media  and (max-width: 768px){
+     */
+
+  /* @media all and (max-width: 768px)  {
+    .roundcontent{
+       
+        left: 148px;
+        width: 58.3%;
+    }
+    .roundborder{
+
+        left: 148px;
+        width: 58.3%;
+    }
+    
+} */
+
+/* @media all and (min-width: 300px)  {
+    .roundcontent{
+       
+        left: 107px !important;
+        width: 62.5% !important;
+    }
+    .roundborder{
+
+        left: 107px;
+        width: 62.3%;
+    }
+    
+} */
+/*
+@media all and (max-width: 320px){
+    .rect{
+        width: 290px;
+    }  
+    .roundcontent{
+        top: -47px;
+        left: 104px;
+        width: 67%;
+        padding: 6px;
+    }
+    .roundborder{
+        top: -45px;
+        left: 103px;
+        width: 67%;
+    }
+    
+} */
+.paperbgcolor{
+    background: unset !important;
+    margin-left:0 !important;
+}
+.tab{
+outline: none!important;
+border: none !important;
+color: #373334;
+opacity: 0.4;
+font-size: 14px;
+border-bottom:2px solid #707070;
+}
+#allTab.Mui-selected{
+    opacity: 10 !important;
+    color: #4795DE !important;
+}
+.askbutton{
+    background-color: #2168B2;
+    width: 5rem;
+    
+}
+.asksayNav>ul>li.ask .askbuttonimage{
+    background: #2168B2 url(../../images/ask-hover.svg) center 4px no-repeat;
+    box-shadow: 0px 3px 6px #00000029;;
+    color: #fff;
+}
+.asksayNav>ul>li.say .saybuttonimage{
+    background: #36B549 url(../../images/say-hover.svg) center 4px no-repeat;
+    box-shadow: 0px 3px 6px #00000029;;
+    color: #fff;
+
+}
+.asksayNav>ul>li.update .updatebuttonimage{
+    background: #EF3F37 url(../../images/update-hover.svg) center 4px no-repeat;
+    box-shadow: 0px 3px 6px #00000029;;
+    color: #fff;
+
+}
+.asksayNav>ul>li.tag .tagbuttonimage{
+    background: #EFBA29 url(../../images/tag-hover.svg) center 4px no-repeat;
+    box-shadow: 0px 3px 6px #00000029;;
+    color: #fff;
+}
+.loader{
+    width: 70px !important;
+    height: 70px !important;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+}
+.nodata {
+    width: 100%;
+    padding-top:30px;
+    text-align: center;
+}
+.MuiTabs-root {
+    margin-left: 0 !important;
+}
+@media all and (max-width: 967px){
+    .roundcontent,
+    .roundborder {
+        width:100%;
+        top:0;
+        border-radius: 25px;
+      }
+    .rect {
+        top:80px;
+        border-radius: 20px;
+    }
+    
+}
+@media all and (max-width: 767px){
+.roundcontentandroundborder {
+    position: fixed;
+    top: 70%;
+    z-index: 999;
+    width: 90%;
+    height: 50px;
+    left: 5%;
+}
+.rect {
+    top:unset;
+    border-radius: 20px;
+    height: 600px;
+    position: relative;
+  }
+  .roundcontent {
+      position: static;
+      width: 100%;
+    
+    border-radius: 20px;
+  }
+  .roundborder {
+      display: none;
+  }
+}

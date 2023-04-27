@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+
+.Signin {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: auto;
+    font-family: 'Rubik', sans-serif;
+    /* border:1px solid green; */
+  }
+  .SigninFrom {
+    width: 304px;
+    min-height: 119px;
+    margin: auto;
+    background-color: #EFEEED;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Rubik', sans-serif;
+  }
+  .SigninFrom input {
+    border: 0;
+    background-color: transparent;
+    font-size: 18px;
+  }
+  .SigninFrom input:focus {
+    outline: none;
+  }
+  input::placeholder {
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #7A7A7A;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+  }
+  .SigninFromEmail {
+    width: 80%;
+    margin-top: 8%;
+    margin-left: 10%;
+    border-bottom: 2px solid #a9a8a6;
+  }
+
+  .SigninFromPassword {
+    width: 80%;
+    margin-top: 8%;
+    margin-left: 10%;
+    border-bottom: 2px solid #a9a8a6;
+  }
+  .ForgotPassowrd{
+    margin-top: 8%;
+    margin-left: 10%;
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    color:#4795DE;
+    cursor: pointer;
+  }
+  .SigninButton{
+      width: 80%;
+    margin: 20px 30px ;
+    padding: 10px 30px;
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    color: #000;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+                              .SigninButton:disabled {
+                              background-color: #F3F2F0;
+                              color: #7A7A7A;
+                              cursor: not-allowed;
+                              opacity: 10;
+                            }
+  .Changesignin{
+      text-align: center;
+      position: relative;
+      margin: 20px;
+  }
+  .Changesignin span {
+    background: #fff;
+    display: inline-block;
+    padding: 0 5px;
+    position: relative;
+  }
+  .Changesignin::before{
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 100%;
+      border: 1px solid #7A7A7A;
+  }
+  
+.SocailSignIn{
+  width:236px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  background-color: #EFEEED;
+  cursor: pointer;
+  border-radius: 20px;
+  margin: 0px auto 20px auto ;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+}
+.SocailImage{
+width: 20px;
+  margin-left: 10px;
+}
+.ErrorMsg{
+  visibility: visible;
+  margin: 0px;
+  padding-top: 10px;
+  font-size: 12px;
+  color:rgb(230, 79, 79);
+  text-align: center;
+}
+.StatusMessage{
+  margin: 0px;
+  padding-top: 10px;
+  font-size: 1em;
+  color:rgb(230, 79, 79);
+  text-align: center;
+}

@@ -1,0 +1,43 @@
+.AskActivity{
+    width:465px;
+    height: 54px;
+    display:flex;   
+    justify-content: space-between;
+    background-color: #efeeed;
+    border-radius: 50px;
+    box-shadow: 5px 5px 8px rgb(163, 177, 198, 0.6),
+    -6px -6px 12px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+.askicon{
+    margin: 0px 10px 0px 20px;
+}
+.ask{
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 600;
+   
+}
+
+.DownArrow{
+    margin-bottom: 3px;
+    margin-left:10px ;
+}
+@media(max-width:768px){
+.AskActivity{
+   width: 380px;
+}
+.number{
+    
+    margin: 10px 0px 0px 200px;
+    }
+}
+@media(max-width:320px){
+    .AskActivity{
+       width: 320px;
+    }
+    .number{
+        
+        margin: 10px 0px 0px 160px;
+        }
+    }

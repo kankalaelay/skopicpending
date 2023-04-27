@@ -1,0 +1,151 @@
+.InviteStyles .modal-content{
+    border-radius: 30px;
+    /* font-family: 'Poppins', sans-serif; */
+    width:700px;
+    min-height: 593px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #fff!important;
+}
+.InviteStyles .title{
+    font-size: 20px;
+    font-weight: 700;
+}
+.InviteStyles .InvitationEmail{
+    /* border:1px solid red; */
+    width: 590px;
+    margin: auto;
+    margin-bottom:20px;
+}
+
+.InviteStyles .InvitationEmail   input{
+    width:100%;
+    border-radius: 50px;
+    border:2px solid  grey;
+    font-size: 16px;
+    padding:11px;
+}
+.InviteStyles .InvitationSubject{
+    width: 590px;
+    margin: auto;
+    margin-bottom:20px; 
+    
+}
+.InviteStyles .InvitationSubject input{
+    width:100%;
+    border-radius: 50px;
+    border:2px solid  grey;
+    font-size: 16px;
+    padding:11px;
+}
+.InviteStyles .InvitationTextaera{
+    /* border:1px solid red; */
+    width: 590px;
+    margin: auto;
+    margin-bottom:20px;
+}
+
+.InviteStyles .InvitationTextaera   textarea{
+    width:100%;
+    border-radius: 20px;
+    border:2px solid  grey;
+    font-size: 16px;
+    padding:11px;
+}
+.InviteStyles .Invite{
+    width: 88px;
+    height:33px;
+    border:none;
+    border-radius:20px; 
+    background-color: rgb(7, 55, 100);
+    color:white;
+    margin-left: 270px;
+    cursor: pointer;
+}
+.InviteStyles .Invite:disabled{
+    width: 88px;
+    height:33px;
+    border:none;
+    border-radius:20px; 
+    background-color:#98B9D8 ;
+    color:white;
+    margin-left: 270px;
+    cursor: pointer;
+}
+
+.InviteStyles .Change{
+    position: relative;
+    padding:10px;
+    text-align: center;
+}
+.InviteStyles .Change::before{
+    content: "";
+    position: absolute;
+    top:22px;
+    left: 8px;
+    border: 1px solid ;
+    width: 290px;
+    height: 2px;
+}
+.InviteStyles .Change::after{
+    content: "";
+    position: absolute;
+    top:22px;
+    right: 8px;
+    border: 1px solid ;
+    width: 290px;
+    height: 2px;
+}
+.InviteStyles .GmailContacts{
+    margin-left: 60px;
+    width:250px;
+    height:33px;
+    border:none;
+    border-radius:20px;
+    background-color: #F3F2F0;
+}
+.InviteStyles .GmailContacts span{
+    color: #3E90E1;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 20px;
+}
+.InviteStyles .FacebookContacts{
+    margin-left: 30px;
+    width:250px;
+    height:33px;
+    border:none;
+    border-radius:20px;
+    background-color: #F3F2F0; 
+}
+.InviteStyles .FacebookContacts span{
+    color: #3E90E1;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 20px;
+}
+.InviteStyles .multipleEmail{
+    background-color: #d4d5d6;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 30px;
+    height: 30px;
+    padding: 0 4px 0 1rem;
+    display: inline-flex;
+    align-items: center;
+    margin: 0.6rem 0.3rem 0.3rem 0.6rem;
+}
+.InviteStyles  .multipleEmail > .button{
+    background-color: white;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+    margin-left: 10px;
+    font-weight: bold;
+    padding: 0;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

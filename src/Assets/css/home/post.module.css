@@ -1,0 +1,642 @@
+.post{
+    padding: 10px 20px 10px 20px;
+    background: white;
+    /* max-width: fit-content; */
+    margin: 10px 20px;
+    border-radius: 20px;
+}
+
+.avatardetails{
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+}
+.profilename{
+    margin-bottom: 0px;
+    font-size: large;
+}
+.sayoutlinedots{
+    position: relative;
+    bottom: 3px;
+    left: -17px;
+}
+.saysandfollow{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+.noOfsays{
+    display: flex;
+    align-items: center;
+    margin-left: 44px;
+}
+.noOfsays>a{
+cursor: pointer;
+}
+.noOfsays>a>p{
+    margin: 0px;
+}
+.noOfsays span {
+    font-size: 14px;
+    padding-left: 10px;
+    color: #373334;
+}
+.noOfsays img {
+    position: relative;
+    top: -2px;
+}
+.noOffollows{
+    display: flex;
+    align-items: center;
+    margin-right: 44px;
+}
+.followtext{
+    margin: 0px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.comment{
+    padding-top: 10px;
+    display: flex;
+}
+.comment>a>img{
+    height: fit-content;
+    position: relative;
+    right: 31px;
+    top: 7px;
+}
+.followtext span {
+    font-size: 14px;
+    padding-left: 10px;
+}
+.commentinput{
+    background-color: #F3F2F0;
+    outline: none;
+    padding: 9px 48px 9px 9px;
+    border: 1px solid #707070 ;
+    width: 100%;
+    margin-left: 10px;
+    /* box-shadow: 0x 3px 6px; */
+    /* min-width: 88%; */
+    border-radius: 25px;
+}
+.postedcomment{
+    display: flex;
+}
+.likebutton{
+    border: none;
+    outline: none;
+    margin-right: 10px;
+}
+
+.likeandlikecount{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 66px;
+    margin-top: 7px;
+}
+.likeandlikecount>a>img{
+    /* height: fit-content;
+    margin-top: 4px; */
+vertical-align: initial;
+}
+.likeandlikecount>p{
+    margin-left: 10px;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    bottom: 5px;
+}
+.dropdownlinks{
+    border: 1px solid black;
+    display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+}
+.dropdown:hover .dropdownlinks{
+    display: block;
+}
+.dropdownlinks>Link{
+    color: black ;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block ;
+  
+}
+
+
+.dropdownbutton{
+    outline: none;
+    background-color:white  ;
+    color: white;
+    /* padding: 16px; */
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdownlinks>ul{
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    list-style-type: none;
+    color:blue;
+    padding: 5px 0px 0px 5px;
+}
+
+.divider{
+    background: black !important;
+    margin-bottom: 5px !important;
+}
+
+.avatar{
+    margin-right: 10px;
+    border-radius: 40% !important;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.profileimagetext{
+    /* overflow: hidden; */
+    margin-left: 10px;
+    background-color: #F3F2F0;
+    padding: 13px;
+    border-radius: 25px;
+    margin-top: 9px;
+    width: -webkit-fill-available;
+    width: -moz-available;
+}
+.profileimagetext>p{
+    margin-bottom: 0;
+}
+.childsayprofilename{
+    font-size: 20px;
+    margin-bottom: 0;
+}
+.childsaysprofileandfdropdown{
+    display: flex;
+    justify-content: space-between;
+}
+.childdropdownbutton{
+    background-color: #F3F2F0 !important;
+}
+
+.locationandtime{
+    display: flex;
+    font-size: 12px;
+    color: #373334;
+    align-items: center;
+}
+.locationandtime img{
+    height: fit-content;
+    margin: 0px 3px 0px 0px;
+}
+.locationandtime img:first-child {
+    margin: 0 6px;
+}
+.followerandcount{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+.followerandcount>div>div {
+    font-size: 11px;
+    color: #373334;
+}
+.locationandtime span:first-child {
+    flex-shrink: 0;
+}
+.locationandtime span:last-child {
+    padding-left: 10px;
+    flex-shrink: 1;
+    max-width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* .askcount{
+    width: 14px;
+    height: 14px;
+    color: white;
+    font-size: 11px;
+    border-radius: 50%;
+    padding: 0 0 0 4px;
+} */
+.askcount{
+    background-color: #2168B2;
+    width: 14px;
+    height: 14px;
+    color: white;
+    font-size: 10px;
+    border-radius: 50%;
+    text-align: center;
+}
+.saycount{
+    background-color: #45A735;
+    width: 14px;
+    height: 14px;
+    color: white;
+    font-size: 10px;
+    border-radius: 50%;
+    text-align: center;
+}
+.tagcount{
+    background-color: #EFBA29;
+    width: 14px;
+    height: 14px;
+    color: white;
+    font-size: 10px;
+    border-radius: 50%;
+    text-align: center;
+}
+.updatecount{
+    background-color: #E82727;
+    width: 14px;
+    height: 14px;
+    color: white;
+    font-size: 10px;
+    border-radius: 50%;
+    text-align: center;
+}
+.childsaycount{
+    width: 14px;
+    height: 14px;
+    background-color: #36B549;
+    color: white;
+    font-size: 11px;
+    border-radius: 50%;
+    padding: 0 0 0 4px;
+    position: absolute;
+    right: 4px;
+    bottom: 4px;
+}
+
+.childsayprofileimage{
+    margin-top: 10px;
+}
+.childsaytextandcolorlabel{
+    display: flex;
+    position: relative;
+}
+.childsaytextandcolorlabel>div>p{
+margin-bottom: 0;
+}
+.dot{
+    height: fit-content;
+    margin: 6px 6px 0px 6px;
+}
+.nooflikes{
+    font-size: 14px;
+    margin: 3px 0px 0px 3px;
+}
+.spandisplay{
+    display: flex;
+}
+.childsaytime{
+    margin-bottom: 0;
+    font-size: 13px;
+}
+.childsayopen{
+    display: block;
+}
+.childsayselection{
+    display: none;
+}
+.saycountbottom{
+    margin-bottom: 0;
+}
+.childpost{
+    margin: 5px 0px 0px 55px;
+    background: #36B549;
+    color: white;
+    border-radius: 25px;
+    padding: 2px 15px;
+    border: none;
+    outline: none;
+}
+.likeunlike{
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+   
+}
+.likeunlike>a{
+cursor: pointer;
+font-size: 14px;
+}
+.likeunlike>a>img{
+    margin-right: 5px;
+    position: relative;
+    top:-1px;
+}
+.likeunlike>p{
+    margin-bottom: 0;
+}
+.likeunlike>p>img{
+    margin-right: 4px;
+}
+.followcount{
+    color: #878585;
+    cursor: pointer;
+
+}
+.childsaydropdowwbutton{
+    background: none !important;
+}
+.postbuttonandlabel{
+    display: flex;
+    justify-content: space-between;
+    min-width: 270px;
+    align-items: first baseline;
+}
+.postbuttonandlabel>label{
+    margin: 3px 20px 0px 0px;
+}
+.editPost{
+background-color: #2181ce;
+color: white;
+border-radius: 25px;
+padding: 2px 16px;
+border: none;
+outline: none;
+margin-top: 4px;
+}
+
+.postMessage{
+display: none;
+}
+.sendaMail{
+    background: #2181ce;
+    color: white;
+    outline: none;
+    border-radius: 25px;
+    border: none;
+    position: relative;
+    top: 10px;
+    align-self: center;
+    left: 124px;
+padding: 3px 15px;
+margin-bottom: 20px;
+min-width: 88px;
+
+}
+.sendamailtextarea{ 
+    min-width: 325px;
+    border-radius: 0px;
+    outline: none;
+    border: solid 1px #dcdcdc;
+    padding: 5px 12px;
+}
+.EditPostMessage{
+    width: 100%;
+    border: 10px;
+    border-radius: 10px;
+    padding: 8px 8px 10px 12px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    border:1px solid #707070;
+    resize: none;
+}
+.sendaMailModel{
+    display: flex;
+}
+.sendaMailModel>div>img,
+.postedcomment>div>img {
+    border-radius: 15px;
+    border:solid 1px #707070;
+}
+.locationpinchildpost{
+    position: relative;
+right: 32px;
+top: 7px;
+}
+.locationsearch{
+    position: fixed;
+    top: 10rem;
+    left: 42.5%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 400px;
+    z-index: 10;
+
+  }
+  .comboboxdropdown{
+      z-index: 1301 ;
+  }
+  .addlocation{
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+  }
+  .mapcontainer{
+      padding: 0 15px 15px 15px;
+  }
+.comboinput{
+    width: 100%;
+min-width: 600px;
+min-height: 45px;
+border-radius: 25px;
+outline: none;
+border: none;
+box-sizing: border-box;
+box-shadow: 2px 2px 2px 0px #888;
+padding-left: 15px;
+}
+.locationheading{
+    margin-bottom: 0;
+    color: #373334;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 2px;
+}
+.locationsubmit{
+    outline: none;
+    border: none;
+    background-color: #fff;
+}
+
+.editBioInfo{
+    display: block;
+}
+.editBioInfoNone{
+    display: none;
+}
+
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 0;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container >.containerinput {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover .containerinput ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container >.containerinput:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container >.containerinput:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+       top: 5.9px;
+      left: 5.9px;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background: white;
+  }
+  .postinfo{
+padding: 0px 0px 10px 12px;
+}
+.postinfo>p{
+    margin-bottom: -8px;
+    font-size: 17px;
+}
+.postinfo>div{
+display: flex;
+justify-content: space-between;
+}
+.postinfo>div>p{
+    margin-bottom: -8px;
+    font-size: 17px;
+}
+.selectmultiplecommunitys{
+    display:flex;
+}
+.selectmultiplecommunitys>p{
+    margin-bottom:0px;
+    padding-left:8px;
+    cursor:pointer;
+}
+.selectmultiplecommunitys>img{
+    margin-left:12px;
+    padding-bottom:3px;
+    cursor:pointer
+}
+.postinfo>span{
+font-size: 14px;
+}
+.postingoptionsradio{
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-between;
+}
+.postingoptionschild{
+display: flex;
+}
+.postdropdown{
+    float: right;
+position: relative;
+top: 5px;
+right: 2px;
+padding-left: 20px;
+}
+.disableRadioOptions{
+    opacity: 0.5;
+    pointer-events: none;
+}
+.warningmsg{
+    text-align: center;
+    font-size: 12px;
+    padding: 2px 4px;
+    display: block;
+    margin: 0;
+    line-height: 1.2;
+    text-align: left;
+}
+button, a {
+    cursor: pointer;
+}
+.moderatorcommunity{
+    display: flex;
+}
+.moderatorcommunity>img{
+    width: 11%;
+border-radius: 12px;
+margin: 3px 12px 23px 10px;
+}
+.moderatorcommunity>p{
+    margin-top: 8px;
+
+}
+.moderatorcommunityparentdiv{
+    height: 400px;
+    scroll-behavior: smooth;
+overflow-y: scroll;
+padding-top: 10px;
+scrollbar-width: none;
+}
+.moderatorcommunitychilddiv{
+    display: flex;
+    justify-content: space-between;
+}
+.editBioTextArea{
+    width: 100%;
+    resize: none;
+    padding: 3px 0 0 7px;
+}
+.editbioSave{
+    float: none !important;
+    margin-top: 7px !important;
+    margin-right: 5px !important;
+    background-color: #337ab7;
+    width: 65px;
+    border-radius: 5px;
+    color: #ffffff;
+    font: bold
+}
+@media all and (max-width: 767px){
+    .post {
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
+.deletePost{
+    display: none;
+}

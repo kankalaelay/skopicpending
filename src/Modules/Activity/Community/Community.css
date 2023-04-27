@@ -1,0 +1,41 @@
+.CommunityActions{
+    display: flex;
+    /* justify-content: center; */
+    width:440px;
+    height: 63px;
+    margin-top: 20px;
+    border-radius: 40px;
+    background-color: #efeeed;
+    box-shadow: 5px 5px 8px rgb(163, 177, 198, 0.6),
+    -6px -6px 12px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+.CommunityActions img{
+    /* border:1px solid ; */
+    width: 20px;
+    margin-right: 40px;
+    margin-left: 50px;
+}
+.CommunityActions p{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-right: 80px;
+}
+@media(max-width:768px){
+ 
+    .CommunityActions{
+        width: 350px;
+    }
+}
+@media(max-width:425px){
+ 
+    .CommunityActions{
+        width: 380px;
+    }
+}
+@media(max-width:320px){
+ 
+    .CommunityActions{
+        width: 320px;
+    }
+}

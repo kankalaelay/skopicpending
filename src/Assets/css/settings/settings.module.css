@@ -1,0 +1,379 @@
+.body{
+    background-color: #EFEEED;
+    margin: 0;
+    /* padding: 0; */
+}
+
+.darkthemebody{
+    background-color: #363537;
+}
+
+/* *{
+    margin: 0 !important;
+    
+} */
+.emailnotify>p{
+    font-size: 1rem;
+     margin-left: 27px;
+}
+
+p{
+    font-family:'Roboto', sans-serif;
+}
+.sidebarParentoptions{
+    background-color:white !important;
+    border-radius: 25px !important;
+    height: fit-content;
+}
+.sidebarParentoptionsdarkTheme{
+    background-color: #585858 !important;
+    color:whitesmoke;
+}
+.sidebarParentoptions1{
+    margin-inline-start: 15px;
+    margin-block-start: 10px;
+    padding-bottom: 3%;
+    margin-inline-end: 30px;
+    /* flex:auto; */
+}
+.settingoptions{
+    display: flex;
+    flex: auto;
+    
+}
+
+.sidebarchildoptions{
+    margin-left: 1.7rem;
+    border-radius: 25px;
+    background-color:white;
+    /* max-width: 100%; */
+    margin-bottom: 3%;
+    flex: auto;
+    /* box-shadow:1px 2px 3px #4795DE; */
+    
+}
+.sidebarchildoptionsdarkTheme{
+    background-color: #585858;
+    color: whitesmoke;
+}
+
+.divider{
+    margin-left: 7% !important;
+    margin-right: 70% !important;
+    margin-bottom: 2% !important;
+}
+.emailnotify{
+    display: flex;
+    padding-left: 26px;
+}
+.emailicon{
+    display: flex;
+    position: relative;
+    padding-top: 6px;
+    right: 10px;
+    margin-left: 14px;
+    left:18px
+}
+.emailnotification{
+    position: absolute; 
+    max-width: 7px;
+    max-height: 7px;
+    left: 6px;
+    bottom: 27px;
+}
+
+.sidebarchildoptionsheader{
+    margin-top:20px;
+}
+.sidebarchildoptionsheader1{
+    margin-top: 13px;
+}
+.sidebarchildoptionsheader2{
+    margin-top: 13px;
+}
+.sidebarchildoptionsocialmediapswdchange{
+display: flex;
+padding-top: 15px;
+}
+
+
+
+@media all and (max-width: 458px){
+    html{
+        width: fit-content !important;
+    }
+    .emailnotify{
+        padding-left: 10px;
+    }
+    .emailicon{
+        padding-top: 8px;
+    }
+    .emailnotification{
+        top:26px !important;
+    }
+    .emailnotificationsoptions{
+        
+        padding-bottom: 4px;
+    }
+    .sidebartoggleoptions{
+        margin-right: 5%;
+    margin-left: 6%;
+    }
+    .settingoptions{
+        
+    flex-flow: column nowrap;
+    }
+    .sidebarParentoptions{
+        margin-right: 41px;
+    }
+
+}
+
+.focusapperance{
+    box-shadow:2px 4px 4px 2px #4795DE;
+}
+.sidebarchildoptions>h2{
+    display: flex;
+
+}
+
+/* .h2{
+    padding-top: 3% !important;
+    padding-left: 1% !important;
+    font-size: large !important;
+} */
+
+.resetpassword{
+    justify-content: space-between;
+    display: flex;
+    margin-left: 3%;
+    margin-right: 30%;
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+.sidebartoggleoptions{
+    flex: auto;
+    margin-top: 5%;
+    margin-right: 10%;
+}
+
+
+.emailnotificationsoptions>input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden ;
+}
+
+.inputlabel {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 30px;
+	height: 17px;
+	background: grey;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+.inputlabel:after {
+	content: '';
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	width: 15px;
+	height: 15px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + .inputlabel {
+	background:#4795DE;
+}
+
+input:checked + .inputlabel:after {
+	left: calc(100% - 1px);
+	transform: translateX(-100%);
+}
+
+.inputlabel:active:after {
+	width: 13px;
+}
+
+
+.lastoption{
+    padding-bottom: 3%;
+}
+
+.socialmedia{
+    max-width: 17px;
+    max-height: 17px;
+    margin-top: 16px;
+    margin-right: 12px;
+    margin-left: 55px;
+}
+.password{
+   max-width:15px;
+    max-height: 18px;
+    margin-top: 16px;
+    margin-right: 12px;
+    margin-left: 55px;
+}
+
+/* // centering */
+/* body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+} */
+.emailnotificationsoptions{
+display: flex;
+justify-content: space-between;
+margin-left: 7%;
+margin-right: 7%;
+}
+
+.inputpassword{
+    outline: 0;
+}
+
+.signoutbutton{
+text-align: center;
+}
+
+.signout{
+font-size: 1.1rem !important;
+width: 100% !important;
+border-radius: 25px !important;
+color: #373334 !important;
+outline: none !important;
+}
+
+.submit{
+    margin-left: 45% !important ;
+    background: #6CA8E1 !important;
+    border-radius: 25px !important;
+    min-width: 88px !important;
+    text-emphasis-color: white;
+    color: white !important;
+    text-transform: none !important;
+    margin-bottom: 3% !important;
+    outline: none !important;
+}
+
+.submitdarkTheme{
+color: whitesmoke !important;
+
+}
+.buttontextdarkTheme{
+    filter: invert(100%);
+}
+
+.inputpassword{
+      position: absolute !important;
+}
+.passwordimg    {
+    margin-left: 150px !important;
+}
+
+.passwordlabel{
+    padding-top: 2%;
+     padding-left: 5.2%;
+}
+
+.notifications{
+    padding: 10px 0px 10px 15px;
+    border-radius: 20px;
+    background-color: #ffffff;
+   margin-left: calc(-15% - (20% / 2));
+   box-shadow: 2px 3px 6px;
+}
+.notificationscroll{
+    padding-right: 7px;
+    overflow-y: scroll;
+    height: 1445px;
+    scrollbar-width: thin;
+    scrollbar-color:#6b71c9;
+    width: -moz-available;
+}
+
+.message{
+    padding:0;
+    text-align:center;
+    font-size:12px;
+    color:red;
+    
+}
+.message:last-child{
+     padding:0;
+    text-align:center;
+    font-size:12px;
+    color:green;
+}
+
+
+.eyeshowhide{
+font-size: 1rem !important;
+}
+
+
+
+
+
+
+/* .sidebarchildoptions: */
+
+.help{
+    padding: 25px;
+}
+
+/*Terms and Service*/
+
+.TermsofService{
+margin: 0 auto;
+background: #ffffff;
+padding: 25px;
+border-radius: 25px;
+
+}
+.privacyheading{
+    width: fit-content;
+    /* left: 10%;
+position: absolute;
+top: 20%; */
+}
+
+.careersMail{
+    margin: 0 0 10px 1.7rem
+}
+
+/*Blog*/
+.Blog{
+    margin: 0 auto;
+    width: fit-content;
+}
+.BlogMessage{
+    background: #ffffff;
+padding: 25px;
+border-radius: 25px;
+
+}
+
+.author{
+    margin: 1% 0 2% 0;
+    /* position: absolute;
+    top: 70%; */
+}
+
+/*about*/
+.aboutImages{
+    display: flex;
+    justify-content: space-evenly;
+}
+.aboutText{
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 0;
+}

@@ -1,0 +1,91 @@
+.Communities-dispaly{
+    width: 50%;
+}
+.Communities{
+    width: 440px;
+    min-height: 80px;
+    background-color: #efeeed;
+    padding:25px 0px;
+    border-radius:20px ;
+    box-shadow: 5px 5px 8px rgb(163, 177, 198, 0.6),
+    -6px -6px 12px rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+}
+.head{
+    font-size: 18px;
+    font-weight: 500;
+}
+.Community{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+.Community-Details{
+    margin-left: 20px;
+}
+.Community-Details h3{
+    margin: 5px 8px 8px 0px;
+    padding: 0;
+    font-weight: 400;
+}
+.title{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+ .Unfollow{
+     width: 71px;
+     height: 24px;
+    font-size: 12px;
+    border: none;
+    border-radius: 20px;
+    text-transform: capitalize;
+    box-shadow: 5px 5px 8px rgb(163, 177, 198, 0.6),
+    -6px -6px 12px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+.Unfollow:disabled{
+    background-color: #D8D8D8;
+    cursor: no-drop;
+}
+.Actions{
+    margin-left: 15px;
+    width:25px;
+    height: 24px;
+    border:none;
+    border-radius:50px;
+    box-shadow: 5px 5px 8px rgb(163, 177, 198, 0.6),
+    -6px -6px 12px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+#popUP{
+    display: none;
+    width: 350px;
+    height:20px;
+    border:1px solid red;
+}
+@media(max-width:768px){
+ 
+    .Communities{
+        width: 350px;
+    }
+}
+.CommunityImage{
+    width:60px;
+    height: 60px;
+}
+@media(max-width:425px){
+    .Communities{
+        width: 380px;
+    }
+    .head{
+        text-align: center;
+    }
+}
+@media(max-width:320px){
+ 
+    .Communities{
+        width: 320px;
+    }
+}

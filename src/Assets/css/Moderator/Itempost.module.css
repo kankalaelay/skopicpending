@@ -1,0 +1,24 @@
+.ItemPost{
+    display: flex;
+    margin-top: 10px;
+    border: 1px red;
+    }
+    .PostInfo{
+        border: 1px blue;
+        display: inline;
+        margin :auto
+    }
+    .PostInfo{
+        display: flex;
+        margin-top: 12px;
+      
+
+    }
+    .PostProfile{
+        margin-left: 20px;
+    }
+
+    .PostButton{
+        border-radius: 12px;
+        margin-right: 20px;
+    }

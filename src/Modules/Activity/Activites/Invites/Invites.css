@@ -1,0 +1,57 @@
+.Invites{
+    width:465px;
+    height: 54px;
+    display:flex;   
+    justify-content: space-between;
+    margin-top: 25px;
+    background-color: #efeeed;
+    border-radius: 50px;
+    box-shadow: 5px 5px 8px rgb(163, 177, 198, 0.6),
+    -6px -6px 12px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+.Invites .number{
+    margin-left: 180px;
+}
+
+.SentInviteHeader{
+    display: flex;
+    justify-content: space-between;
+    font-size:14px;
+    border-bottom: 1px solid ;
+}
+
+.Invite{
+    display:block;
+    cursor: pointer;
+    color:#4795DE;
+   text-align: center;
+    font-weight: 600;
+}
+.MessageInfo{
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+.MessageInfo span{
+    font-weight: 600;
+}
+@media(max-width:768px){
+    .Invites {
+       width: 380px;
+    }
+    .Invites .number{
+        
+        margin: 10px 0px 0px 140px;
+        }
+    }
+    @media(max-width:320px){
+        .Invites {
+           width: 320px;
+        }
+        .Invites .number{
+            
+            margin: 10px 0px 0px 100px;
+            }
+        }
+     

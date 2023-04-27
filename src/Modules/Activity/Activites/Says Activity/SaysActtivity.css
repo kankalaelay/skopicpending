@@ -1,0 +1,165 @@
+.SaysActivity {
+  width: 465px;
+  height: 54px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  background-color: #efeeed;
+  box-shadow: 5px 5px 8px rgb(163, 177, 198, 0.6),
+    -6px -6px 12px rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  cursor: pointer;
+}
+.ActivityInfo {
+  width: 50%;
+  padding-top: 15px;
+  margin-right: 20px;
+}
+.number {
+  margin-left: 180px;
+}
+.posts {
+  width: 470px;
+  height: 589px;
+  margin-top: 5px;
+  padding: 20px 0px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 5px 5px 8px rgb(163, 177, 198, 0.6),
+    -6px -6px 12px rgba(255, 255, 255, 0.5);
+  overflow-y: scroll;
+}
+.post-1 {
+  width: 428px;
+  min-height: 100px;
+  overflow-wrap: break-word;
+  margin: 10px auto;
+  padding: 10px;
+  /* border:1px solid red; */
+  border-radius: 20px;
+  box-shadow: 5px 5px 8px rgb(163, 177, 198, 0.6),
+    -6px -6px 12px rgba(255, 255, 255, 0.5);
+  position: relative;
+  background-color: #f3f2f0;
+}
+
+.post-1::-webkit-scrollbar {
+  width: 4px;
+}
+.post-1::scrollbar-width {
+  width: thin;
+}
+
+.post-1::-webkit-scrollbar-thumb {
+  background: #707070;
+  border-radius: 10px;
+}
+.post-1::-webkit-scrollbar-thumb:hover {
+  background: #6b71c9;
+}
+.profile-info {
+  display: flex;
+  height: 45px;
+  /* border:1px solid yellow;  */
+}
+.profile-info img {
+  border-radius: 10px;
+}
+.profile-info p {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 10px;
+}
+.profile-info span {
+  width: 100%;
+  font-size: 12px;
+  margin: 0 10px;
+  /* border:1px solid ;  */
+}
+.discrpition {
+  margin-top: 20px;
+}
+.MessgeDetils {
+  /* border:1px solid red; */
+}
+.discrpition p {
+  width: 428px;
+  margin: 0;
+  margin-top: 3px;
+}
+.PostActions {
+  margin-top: 10px;
+  border-top: 1px solid;
+  /* font-size: 18px; */
+  font-weight: 400;
+}
+.PostActions--Following {
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+}
+.PostCounts {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #373334;
+}
+
+.PostActions img {
+  margin-right: 2px;
+}
+.LikeUpadte {
+  margin-top: 15px;
+  font-size: 12px;
+}
+.postsDownArrow {
+  margin-top: 20px;
+  margin-left: 150px;
+  width: 10px;
+  height: 5px;
+}
+.inner-dropdown {
+  position: absolute;
+  right: -3px;
+  top: 70px;
+  width: 266px;
+  height: 100px;
+  border-radius: 30px;
+  background-color: ivory;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 10px;
+  display: "block";
+}
+
+.inner-dropdown img {
+  margin-right: 10px;
+}
+.inner-dropdown div {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.Sepator {
+  border-top: 1px solid;
+}
+@media (max-width: 768px) {
+  .SaysActivity {
+    width: 380px;
+  }
+  .posts {
+    width: 380px;
+  }
+  .post-1 {
+    width: 350px;
+  }
+}
+@media (max-width: 320px) {
+  .SaysActivity {
+    width: 320px;
+  }
+  .posts {
+    width: 320px;
+  }
+  .post-1 {
+    width: 290px;
+  }
+}

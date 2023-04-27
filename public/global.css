@@ -1,0 +1,54 @@
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('src/Assets/css/fonts/Helvetica.eot');
+  src: url('src/Assets/css/fonts/Helvetica.eot?#iefix') format('embedded-opentype'),
+       url('src/Assets/css/fonts/Helvetica.woff2') format('woff2'),
+       url('src/Assets/css/fonts/Helvetica.woff') format('woff'),
+       url('src/Assets/css/fonts/Helvetica.ttf')  format('truetype'),
+       url('src/Assets/css/fonts/Helvetica.svg#Helvetica') format('svg');
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('src/Assets/css/fonts/Helvetica-Bold.eot');
+  src: url('src/Assets/css/fonts/Helvetica-Bold.eot?#iefix') format('embedded-opentype'),
+       url('src/Assets/css/fonts/Helvetica-Bold.woff2') format('woff2'),
+       url('src/Assets/css/fonts/Helvetica-Bold.woff') format('woff'),
+       url('src/Assets/css/fonts/Helvetica-Bold.ttf')  format('truetype'),
+       url('src/Assets/css/fonts/Helvetica-Bold.svg#Helvetica') format('svg');
+}
+
+body {
+  font-family:'Roboto', sans-serif;
+  font-size: 16px;
+  color: #373334;
+}
+.modal-box {
+  background: #F3F2F0 0% 0%;
+  box-shadow: -2px -3px 6px #FFFFFF, 2px 3px 10px #00000029;
+  border-radius: 20px;
+}
+.dark-gray {
+  color: #373334;
+}
+.h17 {
+  font-size: 17px;
+}
+.bold {
+  font-weight: bold;
+}
+.h20 {
+  font-size: 20px;
+}
+@media (min-width: 900px) {
+  .innercontainer {
+    max-width: 815px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}

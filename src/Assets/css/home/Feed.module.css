@@ -1,0 +1,606 @@
+.feed{
+    width: 100%;
+    position: relative;
+    margin-top: 8px;
+    height: 153px;   
+    border-radius: 0px 0px 25px 25px;
+    background-position: left center;
+    background-size: cover;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 26px;
+    position: relative;
+    margin-bottom: 17px;
+    cursor: pointer;
+}
+
+
+
+.container{
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    border-radius: 0px 0px 25px 25px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgb(243 242 240 / 85%);
+    padding: 5px 12px;
+   
+}
+
+.navbuttons{
+    outline: none !important;
+    border: none !important;
+    background: #F3F2F0;
+    display: inline;
+    max-height: 43px;
+}
+
+.moderator{
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+}
+
+.moderator>p{
+    font-size: 20px;
+    color: #373334;
+    margin: 0;
+}
+
+.crown{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+
+.post{
+    
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 45%;
+    border-radius: 20px;
+    border: solid 1px #DEE0E1;
+
+}
+
+.postinput{
+    outline: none;
+    padding: 10px 10px 10px 20px;
+    border: none;
+    width: 100%;
+    border-radius: 25px;
+    position: relative;
+    font-size: 13px;
+    color: #707070;
+}
+
+.post svg{
+    position: absolute;
+    left: 36px;
+}
+  
+.updates{
+    width: 48px !important;
+}
+.prospectimages{
+    margin-right: 13px;
+}
+
+.postbutton{
+
+    outline: none !important;
+    border: none;
+    border-radius: 25px;
+    vertical-align: middle;
+    background-color: #707070;
+ padding:6px 16px;
+
+}
+
+.postDialog{
+    outline: none !important;
+
+    background-color: #36B549 !important;
+    color: gray !important;
+    border-radius: 24px !important;
+}
+
+.UpdateDialog{
+    outline: none !important;
+
+    background-color: #FF7E7E !important;
+    color: white !important;
+    border-radius: 18px !important;
+}
+
+.TagDialog{
+    outline: none !important;
+    background-color:#EF8A2A !important;
+    color: white !important;
+    border-radius: 18px !important;
+}
+
+.close{
+    border: none;
+    outline: none !important;
+    background-color: white;
+    float: right;
+}
+
+
+.togglebuttoncover
+{
+    display: table-cell;
+    position: relative;
+    width: 200px;
+    height: 140px;
+    box-sizing: border-box;
+}
+
+
+
+ .navHome {
+    border-radius: 50px;
+    width: 15vw;
+    height: 60px;
+    line-height: 60px;
+    background: #fff;
+    border: none;
+    outline: none;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  
+  .navHome > nav {
+    display: flex;
+    position: relative;
+  
+  }
+  
+  .navHome >nav >label{
+    text-align: center;
+    z-index: 1;
+    flex: 1;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 0;
+  }
+  
+  .navHome>nav>label>a {
+    z-index: -1;
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+    transition: color 0.6s ease;
+  }
+  
+  
+  
+  
+  
+   .navHome>nav>.tab {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    bottom: 0;
+    border-radius: 50px;
+    background-color: #9c1de7;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .navHome >nav >input{
+    display: none;
+  }
+  
+  .navHome >nav >.home:checked~.navhome>.asksaynav>label>.home >a {
+    color: #fff;
+  }
+  
+  .navHome>nav>#phone:checked~.tab {
+    left: 50%;
+  }
+   
+  .prospectimagesdiv{
+      display: flex;
+  }
+  .invitebutton{
+    border: none !important;
+    outline: none !important;
+    border-radius: 19px;
+margin-right: 10px;
+    box-shadow:  -2px -3px 6px #FFFFFF, 0px 3px 6px #00000029;
+    background: #EFEEED;
+    padding: 3px 10px 6px 13px;
+    color: #373334 !important;
+    font-size: 17px;
+    padding: 5px 25px;
+  }
+  .invitebutton svg{
+      position: relative;
+      top:2px;
+      margin-right:5px;
+  }
+.filterbuttons{
+
+    padding-top: 7px;
+    position: absolute;
+    box-shadow: 2px 3px 6px darkgrey;
+    width: 295px;
+    border-radius: 25px 25px 0px 4px;
+    right: 0px;
+    top: 65px;
+    display: inline-flex;
+    z-index: -2;
+    bottom: 3px;
+    justify-content: space-evenly;
+}
+  .filterbuttons>span{
+    padding: 0px 0px 0px 8px; 
+  }
+  .filterinput{
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 0px 5px 20px;
+  }
+
+  
+  .modalbgcolor{
+      background-color: #F3F2F0;
+      border-radius: 25px;
+  }
+
+  .modalbody{
+      background-color: white;
+      margin: 0px 30px;
+      border-radius: 25px;
+  }
+  .communitydropdown{
+      border-color: black;
+      background-color: #fff;
+      color: black;
+      border-radius: 15px;
+  }
+  .communitydropdown:hover{
+    border-color: black;
+   background-color: #fff;
+   color:black;
+  }
+  .profilenameandimage{
+      display: flex;
+      margin-bottom: 10px;
+  }
+  .profilename{
+      margin: 0px 0px 0px 8px;
+  }
+  .profilename>p{
+      margin: 0 0 0 2px;
+      /* margin-bottom: 0; */
+  }
+  .asksaytextarea{
+    width: 100%;
+    height: 130px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    resize: none;
+    outline: none;
+  }
+  .locationtagandcharcount{
+      display: flex;
+      justify-content: space-between;
+  }
+
+.profileavatar{
+    margin-top: 4px;
+    height: 60px !important;
+    width: 60px !important;
+}
+
+@media all and (min-width: 1440px){
+.modalbgcolor{
+    width: 600px;
+} 
+}
+
+@media all and (min-width: 768px){
+
+.asksaybuttons{
+    position: relative;
+    left: 152px;
+    margin-bottom: 14px;
+}
+}
+
+  
+.askbutton{
+    border: 1px solid !important;
+    border-radius: 50px 0px 0px 50px !important;
+    width: 21% ;
+    outline: none !important;
+    background-color: white !important;
+}
+.saybutton{
+    border: 1px solid !important;
+    border-radius: 0px 50px 50px 0px !important;
+    width: 21%;
+    outline: none !important;
+    background-color: white !important;
+}
+
+.modalfooter{
+    justify-content: center;
+}
+/* .modalfooter>img{
+    position: absolute;
+    right: 30px;
+} */
+
+@media all and (max-width: 1024px){
+.post{
+    width: 36%;
+}
+
+}
+@media all and (max-width: 967px){ 
+  .post{
+    width: 100%;
+  }
+  .container{ 
+    padding-top: 50px;
+  }
+  
+}
+@media all and (max-width: 320px){
+    .post{
+        width: 28%;
+    }
+    .backgroundimage>img{
+        width: 101.5%;
+
+        margin: -94px 0px 0px -1px;
+    }
+    }
+    @media all and (max-width: 425px){
+        
+        .backgroundimage>img{
+            width: 102.5%;
+    
+            margin: -94px 0px 0px -5px;
+        }
+  }
+
+@media all and (max-width: 767px){
+  .asksaybuttons{
+      position: relative;
+      left: 100px;
+      margin-bottom: 14px;
+  }
+  .post {
+    width: 100%;
+  }
+  .post svg {
+    left:25px
+  }
+  .filterinput {
+    padding:0 10px;
+  }
+  
+}
+
+  .postdropdown{
+    border-radius: 8px;
+    padding:5px 11px;
+    border: 1px solid #999999;
+    color: rgba(0,0,0,0.60);
+    font-size: 12px;
+  }
+
+
+
+  .PostSubmit{
+border-radius: 25px;
+min-width: 106px !important;
+cursor:pointer;
+background-color:#D8D8D8;
+box-shadow: 1px 3px 6px;
+border-radius: 25px !important;
+  }
+  .postSelectionWarning {
+    z-index: 2;
+    position: absolute;
+    bottom: -58px;
+
+    box-shadow: 1px 2px 4px;
+    border-radius: 25px;
+    background: #FFF;
+
+    font-size: 12px;
+    /* left: 41px; */
+    width: 100%;
+    /* width: max-content; */
+    text-align: center;
+    padding: 13px 12px 0px 12px;
+  }
+
+  .askpost{ 
+  background-color: #2168B2 !important;
+  }
+  .saypost{
+    background-color: #36B549 !important;
+  }
+  .saypost,.askpost{
+    width: 6rem !important;
+    color:#fff !important;
+    padding-top: 9px;
+  }
+  .postbuttondisable{
+    opacity: 0.4;
+    cursor: none;
+  }
+  .initialcount{
+    position: relative;
+    bottom: 5px;
+  }
+
+  .additionalcountadd{
+    margin-left: 4px;
+color: #707070;
+  }
+  .publicSwitch{
+    outline: none !important;
+    border-radius: 50px 0px 0px 50px;
+    background-color: white;
+  border: 0.5px solid black;
+  }
+  .privateSwitch{
+    outline: none !important;
+    border-radius: 0px 50px 50px 0px;
+  background-color: white;
+  border: 0.5px solid black;
+
+  }
+  
+  .tagDiv>img{
+      margin:0 0 10px 0px;
+  }
+  .tagDiv>div{
+      list-style: none;
+  }
+  .tagDiv>div>button{
+      padding:3px 15px 3px 15px;
+      font-size: 14px;
+  }
+  .onPublicSwitchSelect{
+    color:  #50b7f5;
+    border: 1px solid  #50b7f5;
+    background-color: #EFF5FB;
+
+  }
+  .onPrivateSwitchSelect{
+    color:  #50b7f5;
+    border: 1px solid  #50b7f5;
+    background-color: #EFF5FB;
+  }
+  .updateSubmit{
+    border-radius: 25px;
+    min-width: 106px !important;
+    cursor:pointer;
+    /* background-color:#D8D8D8; */
+    color: white;
+    box-shadow: 1px 3px 6px;
+    border-radius: 25px !important;
+      background-color: #E82727 !important;
+  }
+  .tagSubmit{
+    border-radius: 25px;
+    min-width: 106px !important;
+    color: white !important;
+    cursor:pointer;
+    box-shadow: 1px 3px 6px;
+    border-radius: 25px !important;
+      background-color: #EFBA29 !important;
+  }
+
+  .errorMessage{
+    color:red;
+    font-size: 12px;
+  }
+
+
+  /*Contact component */
+  .address{
+    display: flex;
+    margin-left: 5%;
+
+  }
+  .contactModalbgcolor{
+    background-color: #FFFFFF;
+    border-radius: 25px;
+  }
+  .contactTextarea{
+    border-radius: 20px !important;
+    resize: none;
+  }
+  .contactSend{
+    border-radius: 25px !important;
+    width: 88px;
+    background-color: #4795DE !important;
+    margin: 0 auto;
+    color: #ffffff !important;
+    border: none;
+    height: 33px;
+  }
+  .sendtoContact{
+    display: flex;
+    justify-content: center;
+  }
+
+  .addressContact{
+    color: #4795DE;
+}
+
+.contactSendButton{
+  cursor: none;
+  opacity: 0.3;
+}
+.overCount{
+  color:red
+}
+
+.aboutAskInfo{
+  position: relative;
+  cursor: pointer;
+  left: 92%;
+}
+
+.askAbout{
+  display: none;
+
+  }
+  .askAbout>h6{
+    margin-bottom: 0;
+  }
+
+  .aboutAskInfoicon{
+     bottom: 15%;
+    position: fixed;
+  }
+  .updateinfoicon{
+    bottom: 18%;
+    position: fixed;
+    
+  }
+
+.aboutAskInfo:hover .askAbout{
+  display: block;
+  z-index: 2;
+  position: absolute;
+  bottom: 64px;
+  box-shadow: 1px 1px 2px;
+  border-radius: 25px;
+  background: #FFF;
+  font-size: 11px;
+  left: -13%;
+  width: 60%;
+  padding: 13px 12px 7px 12px;
+/* background: #36B549; */
+  /* opacity: 3; */
+  }
+
+  .modalfooter>img:hover .askAbout{
+    display: block;
+    background: #9c1de7;
+  }
+
+  .hashValidationMessage{
+    font-size: 13px;
+    color: red;
+  }
+

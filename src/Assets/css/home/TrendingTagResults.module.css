@@ -1,0 +1,11 @@
+.TagResults{
+    box-shadow:3px 3px 3px rgb(163, 177, 198, 0.6), -6px -6px 12px rgba(255, 255, 255, 0.5);
+    border-radius: 20px 0px 0px 20px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    height: 812px;
+    scrollbar-width: thin;
+    scrollbar-color:#6b71c9;
+    width: -moz-available;
+    padding:20px;
+}

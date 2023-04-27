@@ -1,0 +1,195 @@
+.EditCommunityContent {
+  /* background-color: #FFF; */
+  margin: 15px;
+  border-radius: 20px;
+  padding: 20px 15px 0px 15px;
+}
+
+.photoGrid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.Phototimelinecard {
+  max-width: 250px;
+  /* position: relative; */
+  border-radius: 15px !important;
+  background-color: #EFEEED !important;
+  width: 100%;
+}
+
+.photoDescriptionArea {
+  /* resize: none; */
+  width: 100%;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid;
+  border-color: #B5B5B5;
+  padding: 6px;
+  margin: 5px 0 0px 0px;
+  overflow: auto;
+  font-size: 0.8em;
+  height: 65px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.LocationandCountDisplay {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.editPhotoDropDown {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  padding: 2px 0 0 8px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #EFEEED;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+
+.PhotoEditDeleteOptions {
+  display: none;
+  position: absolute;
+  top: 43px;
+  background: #fff;
+  padding: 15px;
+  width: 193px;
+  border-radius: 25px;
+
+  list-style: none;
+  z-index: 1;
+  left: 75%;
+}
+
+.editPhotoDropDown:hover+.PhotoEditDeleteOptions {
+  display: block;
+}
+
+.PhotoEditDeleteOptions>li>img {
+  padding: 0 10px 2px 0;
+}
+
+.Phototimeline {
+  position: relative;
+  width: 240px;
+}
+
+.AddPhoto {
+  display: flex;
+  justify-content: space-between;
+  line-height: 12px;
+}
+
+.AddPhotoLink {
+  display: flex;
+  gap: 7px;
+  color: #4795DE;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.read-or-hide {
+  color: #333333;
+  cursor: pointer;
+}
+
+.initial-Description {
+  color: #A9A9A9;
+}
+
+.textColor {
+  color: #707070;
+}
+
+
+/* alert */
+.photo-overcount-alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Remove Photo */
+.remove-unwanted-photo {
+  display: flex;
+  padding: 0 18px;
+  flex-flow: row;
+  flex-shrink: revert-layer;
+  flex-wrap: wrap;
+  /* gap: 12px; */
+  justify-content: space-between;
+}
+
+.remove-photo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.remove-photo-header img {
+  cursor: pointer;
+}
+
+.click-here {
+  color: blue;
+  cursor: pointer;
+  ;
+}
+
+/* Community Info */
+.communityInfo-input {
+  margin-bottom: 1%;
+}
+
+.communityInfo-input p {
+  position: relative;
+  left: 2%;
+  margin-bottom: 0.5%;
+
+}
+
+.communityInfo-input p span {
+  color: #4795DE
+}
+
+.communityNameInput {
+  width: 100%;
+  border-radius: 25px;
+  padding: 7px 15px;
+  border: 1px solid #ced4da;
+}
+
+.mediumInput1 {
+  width: 49%;
+}
+
+.mediumInput2 {
+  width: 49%;
+}
+
+.communityDescriptionInput {
+  height: 100%;
+  min-height: 82px;
+  padding: 6px 0px 0px 18x;
+  resize: none;
+}
+
+.country-dropdown {
+  width: 100%;
+  border-radius: 25px;
+}
+
+.addressandcity {
+  display: flex;
+  justify-content: space-between;
+}

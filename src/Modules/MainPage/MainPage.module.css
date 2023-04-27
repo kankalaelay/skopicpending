@@ -1,0 +1,12 @@
+.App{
+    display:flex;
+    background-color: #f3f2f0;
+}
+/* Media Quries */
+@media (max-width:425px){
+   .App{
+       display: block;
+       width: 100%;
+       height: 105vh;
+   } 
+}   

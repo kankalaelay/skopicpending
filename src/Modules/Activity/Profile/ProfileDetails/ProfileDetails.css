@@ -1,0 +1,142 @@
+.ProfileDetails{
+    display: flex;
+}
+.Profilepic{
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    width: 157px;
+    height: 157px;
+    border-radius: 100%;
+        border:1px solid white;
+        background-color: #FEFEFE;
+    
+}
+.Profilepic>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.Name{
+    margin-top: 10px;
+    margin-left: 230px;
+}
+.Name h2{
+    padding:0;
+    margin:0;
+    font-weight: 400;
+}
+.Edit{
+    margin-top: 10px;
+    margin-left: 20px;
+    padding:10px 17px;
+    border:none;
+    border-radius: 20px;
+    font-size: 17px;
+    background-color: #efeeed;
+    text-transform: capitalize;
+    box-shadow: 5px 5px 8px rgb(163, 177, 198, 0.6),
+    -6px -6px 12px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+.Edit img{
+    margin-right:  5px;
+
+}
+.Camera{
+    width: 26px;
+    height:26px;
+    position: absolute;
+   bottom:50px;
+   left: 170px;
+    padding:5px;
+    border:0;
+    background-color:#efeeed;
+    border-radius: 50px;
+    box-shadow: 5px 5px 8px rgb(163, 177, 198, 0.6),
+    -6px -6px 12px rgba(255, 255, 255, 0.5);
+    cursor:pointer;
+
+}
+.Camera img{
+    margin-bottom: 20px;
+}
+@media(max-width:425px){
+    .Profilepic{
+        position: absolute;
+        top: 60px;
+        left: 50px;
+        width: 100px;
+        height: 100px;
+       
+    }
+    .Camera{
+        position: absolute;
+       bottom:50px;
+       left: 130px;
+      border-radius: 20px;
+    }
+    .Name{
+        margin-top: 10px;
+        margin-left: 180px;
+    }
+    .Name h2{
+        padding:0;
+        margin:0;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .Edit{
+        margin-top: 10px;
+        margin-left: 20px;
+        padding:5px 17px;
+        border:none;
+        border-radius: 20px;
+        font-size: 12px;
+        background-color: #efeeed;
+        text-transform: capitalize;
+        box-shadow: 5px 5px 8px rgb(163, 177, 198, 0.6),
+        -6px -6px 12px rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+    }
+}
+@media(max-width:320px){
+    .Profilepic{
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        width: 50px;
+        height: 50px;
+       
+    }
+    .Camera{
+        position: absolute;
+       bottom:15px;
+       left: 90px;
+     
+      padding:0;
+    }
+    .Name{
+        margin-top: 10px;
+        margin-left: 120px;
+    }
+    .Name h2{
+        padding:0;
+        margin:0;
+        font-weight: 400;
+        font-size: 12px;
+    }
+    .Edit{
+        margin-top: 5px;
+        margin-left: 20px;
+        padding:5px 10px;
+        border:none;
+        border-radius: 20px;
+        font-size: 12px;
+        background-color: #efeeed;
+        text-transform: capitalize;
+        box-shadow: 5px 5px 8px rgb(163, 177, 198, 0.6),
+        -6px -6px 12px rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+    }
+}

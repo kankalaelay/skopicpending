@@ -1,0 +1,30 @@
+.sidebarParentoptions{
+    background-color:white !important;
+    border-radius: 25px !important;
+    margin-left: 10%;
+    height: fit-content;
+    margin-top:5%;
+    
+}
+.sidebarParentoptionsdarkTheme{
+    background-color: #585858 !important;
+    color:whitesmoke;
+}
+
+
+.sidebarParentoptions1{
+    margin-inline-start: 15px;
+    margin-block-start: 10px;
+    padding-bottom: 3%;
+    margin-inline-end: 30px;
+
+}
+.EditProfile{
+    display: flex;
+    flex: auto;
+}
+.sidebartoggleoptions{
+    margin-right: 5%;
+margin-left: 10%;
+margin-block-start: 70px;
+}

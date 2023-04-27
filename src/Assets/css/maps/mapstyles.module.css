@@ -1,0 +1,150 @@
+.mapcontainer {
+  padding: 0px 17px 0px 30px;
+   height: 600px;
+    
+     width: 100%;
+  
+    /* max-width: 1024px;  */
+    float: right;
+    border-radius: 25px;
+    position: relative;
+
+  }
+  h4{
+    margin: 0;
+  }
+  .mapref {
+    height: 100%;
+    border-radius: 15px;
+  }
+  
+  .btn {
+    font-size: 30px;
+  }
+  
+  .inputcommunitys{
+    position: relative;
+    outline: none;
+    padding: 9px;
+    border: none;
+    width: 100%;
+    /* max-width: 319px; */
+    border-radius: 25px;
+    box-shadow: 0px 2px 4px  black;
+    margin: 3px 0px 3px 4px;
+  }
+
+  .communitymapimage{
+    display: flex;
+  }
+
+  .communityinmap{
+    /* max-width: 192px; */
+    /* width: auto; */
+    margin: 14px 0px 0px 5px;
+    border-radius: 25px;
+    box-shadow: 2px 3px 6px lightgray;
+    font-size: small;
+  }
+
+  .communitycontent{
+    padding: 14px;
+  }
+
+  .communitymapimage>button{
+    border: none;
+    outline: none;
+    box-shadow: 2px 3px 3px lightgrey;
+    margin-right: 2px;
+    color: #4795DE;
+    font-size: 11px;
+    font-weight: 500;
+    border-radius: 12px;
+    padding:6px;
+  }
+  .FocusAppearence{
+    /* box-shadow:2px 4px 4px 2px #4795DE; */
+   border: solid #4795DE !important;
+
+    /* border:5px solid lightblue; */
+  }
+
+  .communityfolder{
+    position: absolute ;
+    outline: none !important;
+    border: none !important;
+    z-index: 2;
+    right: 16px;
+    top:4px;
+    bottom: 1px;
+background-color:white;    
+    border-radius: 20px;
+    max-height: 40px;
+    /* padding-right: 8px; */
+  }
+ 
+  .maprow{
+    width: 100%;
+  }
+
+  .startcommunity{
+
+    background-color: white;
+    display: flex;
+position: absolute;
+    max-width: min-content;
+    padding: 15px;
+    border-radius: 25px;
+    float: left;
+    left: 60px;
+    bottom: 90px;
+  }
+
+  .countrytag{
+position: absolute;
+    background: white;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    right: 80px;
+    bottom: 97px;
+    padding: 17px 0px 0px 22px;
+  }
+
+  .countrytag>p{
+    margin-bottom: -9px;
+  }
+
+  .headerforsignin{
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+  }
+
+  @media  (max-width: 768px) {
+    .communityinmap{
+    width: 100%;
+    min-width: 250px;
+    }
+    }
+    @media  (max-width: 375px){
+    .startcommunity{
+      left: 35px;
+      bottom: 162px;
+
+    }
+    .countrytag{
+      right: 211px;
+      bottom: 73px;
+
+    }
+    }
+  /* div:nth-child(5){
+  margin-bottom: 50px;
+  } */
+
+@media  (max-width: 425px){
+.headerforsignin{
+display: unset;
+}
+}

@@ -1,0 +1,11 @@
+.Activites{
+    width: 50%;
+}
+
+@media(max-width:425px){
+    .Activites{
+        width: 50%;
+        margin-top: 50px;
+    }
+    
+}

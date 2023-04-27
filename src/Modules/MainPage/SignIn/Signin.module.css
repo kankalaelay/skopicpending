@@ -1,0 +1,322 @@
+                          
+                          /* SigIn  */
+                            .Signin {
+                              width: 50%;
+                              display: flex;
+                              flex-flow: column;
+                              justify-content: center;
+                              margin: auto;
+                             
+                            }
+                            .Signin form {
+                              display: flex;
+                              flex-flow: column;
+                              justify-content: center;
+
+                            }
+                            
+                                                        /* SigIn Form */
+                            .SigninFrom {
+                              width: 304px;
+                              
+                              margin: auto;
+                              border: none;
+                             
+                              padding: 20px 40px;
+                             
+                              font-weight: 700;
+                              position: relative;
+                            }
+                            
+                            .SigninFrom input {
+                              border: 0;
+                              width: 100%;
+                              background-color: transparent;
+                              font-size: 16px;
+                              padding: 5px;
+                            }
+                            .SigninFrom input:focus {
+                              outline: none;
+                            }
+                            input::placeholder {
+                              font-size: 16px;
+                              text-transform: capitalize;
+                              color: #000000;
+                              opacity: 0.5;
+                            }
+                            .SigninFromEmail {
+                              width: 100%;
+                              max-width: 300px;
+                              
+                              border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+                              padding-bottom: 4px;
+    margin-bottom: 4px;
+                            }
+                            
+                            
+                            .KeepSignIn{
+                              margin-top: 25px;
+                             font-size: 14px;
+                             display: flex;
+                             justify-content: center;
+                             align-items: center;
+                            }
+                             .Hello{
+                               display: inline-block;
+                               margin-left: 8px;
+                               color: #000000;
+opacity: 0.5;
+                             }
+                                                        /* SigIn Buuton  */
+                            .SigninButton {
+                              margin: 20px auto 0 auto ;
+                              padding: 13px 30px;
+                              background-color: #F3F2F0;
+                              border: none;
+                              border-radius: 30px;
+                              box-shadow: 2px 3px 10px #00000029,  -2px -3px 6px #FFFFFF;
+                              color: #4795DE;
+                              font-size: 18px;
+                              font-weight: bold;
+                              text-transform: uppercase;
+                              cursor: pointer;
+                              transition: all 0.2s ease-in-out;
+                              width: 134px;
+                            }
+                            .SigninButton:focus {
+                              outline: none;
+                            }
+                            .SigninButton:disabled {
+                              background-color: #cccccc;
+                              color: #666666;
+                              cursor: not-allowed;
+                            }
+                                                    /* Forgot Passowrd */
+                            .ForgotPassowrd {
+                              margin: 0;
+                              margin-left: 5px;
+                              margin-top: 10px;
+                              padding: 0;
+                              color: #4795DE;
+                              font-size: 12px;
+                              font-weight: 400;
+                              text-transform: capitalize;
+                              text-align: center;
+                              cursor: pointer;
+                            }
+                            /* Change Sigin */
+                            .Changesignin {
+                              margin-top: 20px;
+                              position: relative;
+                              width: fit-content;
+    margin: 0 auto;
+    
+                            }
+                            .Changesignin p {
+                              position: relative;
+                              margin: 20px 0;
+                            }
+                            .Changesignin p span {
+                              position: relative;
+                              display: block;
+                              font-size: 12px;
+                            }
+                            .Changesignin p span::before ,
+                            .Changesignin p span::after {
+                              content: "";
+                              position: absolute;
+                              top: 50%;
+                              
+                              width: calc(70% - 50px);
+                              height: 1px;
+                              background: #696969;
+                            }
+                            .Changesignin p span::before {
+                              left: 0;
+                              margin-right:50px
+                            }
+                            .Changesignin p span::after {
+                              right: 0;
+                              margin-left:50px
+                            }
+                            .Changesignin p {
+                              text-align: center;
+                            }
+                            /* Icons */
+                            .Signinicon {
+                              margin-top: 20px;
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                            }
+                            .googleicon {
+                              width: 44px;
+                              cursor: pointer;
+                            }
+                            .facebookicon {
+                              margin-left: 15px;
+                              width: 44px;
+                              cursor: pointer;
+                            }
+                            .appleicon{
+                              margin-left: 15px;
+                              width: 44px;
+                              cursor: pointer;
+                            }
+                            .footerElemnts{
+                              font-size: 12px;
+                              margin-top: 40px;
+                              margin-bottom: 10px;
+                              text-align: center;
+                              color: #373334;
+                            }
+                            .footerLinks {
+                              margin-bottom: 20px;
+                            }
+                            .footerLinks a{
+                              color: #373334;
+                              font-size: 12px;
+                              padding: 2px 4px;
+                            }
+                                                                /* Media Quries */
+                            @media (max-width: 1024px) {
+                              .SigninFrom {
+                                width: 100%;
+                              }
+                              .SigninButton {
+                                padding: 10px 20px;
+                              }
+                              .Signinicon {
+                                padding-left: 110px;
+                                margin-top: 20px;
+                              }
+                              .Changesignin {
+                                margin-top: 20px;
+                                position: relative;
+                              }
+                              .Changesignin::before {
+                                content: "";
+                                position: absolute;
+                                top: 9px;
+                                left: 100px;
+                                width: 30px;
+                                height: 0px;
+                                border: 1px solid;
+                              }
+                              .Changesignin::after {
+                                content: "";
+                                position: absolute;
+                                top: 9px;
+                                right: 100px;
+                                width: 30px;
+                                height: 0px;
+                                border: 1px solid;
+                              }
+                            }
+                            @media (max-width: 768px) {
+                              .Signin {
+                                width: 70%;
+                              }
+                              .SigninFrom {
+                                width: 100%;
+                              }
+                              .Signinicon {
+                                padding-left: 120px;
+                                margin-top: 20px;
+                              }
+                              .Changesignin {
+                                margin-top: 20px;
+                                position: relative;
+                              }
+                              .Changesignin::before {
+                                content: "";
+                                position: absolute;
+                                top: 9px;
+                                left: 100px;
+                                width: 30px;
+                                height: 0px;
+                                border: 1px solid;
+                              }
+                              .Changesignin::after {
+                                content: "";
+                                position: absolute;
+                                top: 9px;
+                                right: 100px;
+                                width: 30px;
+                                height: 0px;
+                                border: 1px solid;
+                              }
+                            }
+                            @media (max-width: 425px){
+                              .Signinicon {
+                                padding-left: 110px;
+                                margin-top: 20px;
+                              }
+                            }
+                            @media (max-width: 375px){
+                              .Signinicon {
+                                padding-left: 100px;
+                                margin-top: 20px;
+                              }
+                              .Changesignin {
+                                margin-top: 20px;
+                                position: relative;
+                              }
+                              .Changesignin::before {
+                                content: "";
+                                position: absolute;
+                                top: 9px;
+                                left: 90px;
+                                width: 30px;
+                                height: 0px;
+                                border: 1px solid;
+                              }
+                              .Changesignin::after {
+                                content: "";
+                                position: absolute;
+                                top: 9px;
+                                right: 90px;
+                                width: 30px;
+                                height: 0px;
+                                border: 1px solid;
+                              }
+                            }
+                            @media (max-width: 320px) {
+                              .Signin {
+                                width: 100%;
+                              }
+                              .SigninFrom {
+                                width: 80%;
+                              }
+                              .SigninButton {
+                                padding: 10px 20px;
+                              }
+                              .Signinicon {
+                                padding-left: 120px;
+                                margin-top: 20px;
+                              }
+                              .Changesignin {
+                                margin-top: 20px;
+                                position: relative;
+                              }
+                              .Changesignin::before {
+                                content: "";
+                                position: absolute;
+                                top: 9px;
+                                left: 110px;
+                                width: 30px;
+                                height: 0px;
+                                border: 1px solid;
+                              }
+                              .Changesignin::after {
+                                content: "";
+                                position: absolute;
+                                top: 9px;
+                                right: 110px;
+                                width: 30px;
+                                height: 0px;
+                                border: 1px solid;
+                              }
+                            
+                            }
+                            

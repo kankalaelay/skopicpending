@@ -1,0 +1,26 @@
+.divider {
+  display: flex;
+  width: 943px;
+  margin: auto;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .divider {
+    width: 768px;
+  }
+}
+@media (max-width: 425px) {
+  .divider {
+    width: 425px;
+    display: flex;
+    flex-direction: column;
+    /* border:1px solid green; */
+  }
+}
+@media (max-width: 320px) {
+  .divider {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+  }
+}

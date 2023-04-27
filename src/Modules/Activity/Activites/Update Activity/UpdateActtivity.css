@@ -1,0 +1,33 @@
+.UpdateActtivity{
+    margin-top: 30px;
+    width:465px;
+    height: 54px;
+    display:flex;   
+    justify-content: space-between;
+    background-color: #efeeed;
+    box-shadow: 5px 5px 8px rgb(163, 177, 198, 0.6),
+    -6px -6px 12px rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    cursor: pointer;
+}
+.UpdateActtivity .number{
+    margin-left: 180px;
+}
+@media(max-width:768px){
+    .UpdateActtivity{
+       width: 380px;
+    }
+    .UpdateActtivity .number{
+        
+        margin: 10px 0px 0px 160px;
+        }
+    }
+    @media(max-width:320px){
+        .UpdateActtivity{
+           width: 320px;
+        }
+        .UpdateActtivity .number{
+            
+            margin: 10px 0px 0px 120px;
+            }
+        }

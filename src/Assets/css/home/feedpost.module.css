@@ -1,0 +1,244 @@
+.feeddropdown{
+    position: relative;
+    display: inline-block;
+    bottom: 5px;
+}
+.feeddropdownlinks{
+border-radius: 25px;
+    display: none;
+  position: absolute;
+  right: -27px;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding:20px 26px 10px 20px;
+
+}
+.feeddropdown:hover .feeddropdownlinks{
+    display: block;
+}
+
+
+
+.feeddropdownbutton{
+    outline: none;
+    background-color:white  ;
+    color: white;
+    /* padding: 16px; */
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.feeddropdownlinks>ul{
+    /* margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    list-style-type: none; */
+    margin: 0;
+    padding:0;
+}
+.feeddropdownlinks>ul>li{
+    margin: 0px 0px 7px 0px;
+    font-size: 14px;
+    list-style-type: none;
+
+}
+
+.feeddropdownlinks>ul>li img{
+    margin-right: 6px;
+}
+
+.numberoffollows{
+    display: none;
+}
+.followsicon{
+    display: none;
+}
+.childsayselection{
+    display: block;
+}
+.askdropdown{
+    width: 260px;
+}
+.askdropdown li {
+    cursor: pointer;
+}
+.noOffollows{
+    display: flex;
+    align-items: center;
+    margin-right: 44px;
+}
+.followdisplay{
+    display: none;
+}
+.unfollowdisplay{
+    display: none;
+}
+.messagehidden{
+overflow: hidden;
+margin-bottom: 5px;
+}
+.likedisplay{
+    display: none;
+}
+.childlikedisplay{
+    display: none;
+    height: 12px;
+    width: 12px;
+}
+.childUnlike>img{
+    height: 12px;
+    width: 12px;
+}
+.nodata{
+    position: absolute;
+    top: 28%;
+    left: 41%;
+    font-size: 1.6rem;
+}
+.profilecount{
+    margin-bottom: 0px;
+    font-size: 12px;
+color: #878585
+}
+.profilehovername{
+margin-bottom: 0px;
+}
+.profilename{
+    color: #373334;
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.profilehoverimageandcount{
+    display: flex;
+}
+.profilehover{
+    display: none;
+  position: absolute;
+  left:0;
+  background-color: white;
+  min-width: 280px;
+  z-index: 2;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #00000029;
+border-radius: 15px;
+padding: 15px;
+}
+
+.profilename:hover >.profilehover{
+    display: block;
+}
+.profilehover .profilename {
+    font-size: 20px;
+}
+.followersmodal{
+    display: flex;
+}
+.materialdialog{
+    padding: 10px 66px 10px 25px;
+    border-radius: 25px;
+}
+.divider{
+    width: 110% !important;
+    margin: 10px 0px!important;
+}
+.sampledialgoxtext{
+    margin-bottom: 0px ;
+    color: #878585;
+    font-size: 0.8rem;
+}
+.sampledialogdisplayname{
+    margin-bottom: 0px;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.sampledialogvatar{
+    border-radius: 40% !important;
+    width: 50px !important;
+    height: 50px !important;
+    margin-right: 5px !important;
+}
+.sampledialogtotalcount{
+    font-size: 1.2rem;
+}
+.sampledialogcountandcancel{
+    display: flex;
+    justify-content: space-between;
+}
+.sampledialog{
+    display: none !important;
+}
+
+.dialogdeletebutton{
+    position: relative;
+left: 39%;
+outline: none;
+border: none;
+background: #2E97E1;
+color: white;
+border-radius: 5px;
+padding: 0px 15px
+}
+
+.reportdialog{
+    width: 400px;
+    padding: 10px 25px 10px 25px;
+    border-radius: 25px;
+}
+.reporttextarea{
+    display: none;
+    resize: none;
+    border-radius: 20px;
+    outline: none;
+    padding: 5px;
+    width: 20rem;
+    font-size: 13px;
+}
+.reportsubmit{
+    border: none;
+outline: none;
+background-color: #60A2E0;
+color: white;
+border-radius: 25px;
+padding: 5px 20px;
+    position: relative;
+    left: 7rem;
+    top: 0.6rem;
+margin-bottom: 13px;
+}
+.offensiveorinappropriate{
+    width: 15rem !important;
+}
+.unrelated{
+    width: 10rem;
+}
+.duplicate{
+    width: 12rem;
+}
+.reportheading{
+    font-size: 20px;
+}
+.reportoption{
+    margin-bottom: 0px;
+}
+.edittextarea{
+    display: none;
+}
+.priavteinvite{
+    margin-right: 30px;
+}
+
+.followerbgcolor{
+    color:#878585
+}
+.Loader{
+    margin: 0 auto !important;
+    display: block !important;
+}
+@media all and (max-width: 767px){
+.feeddropdownlinks {
+    right: 0;
+  }
+}
+

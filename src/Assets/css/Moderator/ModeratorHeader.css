@@ -1,0 +1,261 @@
+:root {
+  --corner-radius: 15px;
+}
+.MuiContainer-root {
+  max-width: 1100px !important;
+}
+
+.ModeratorCommunitysList {
+  display: flex;
+  border-radius: 16px;
+  box-shadow: 2px 2px 10px 2px #cccccc;
+  flex-flow: row;
+  padding: 17px 30px 18px 30px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  gap: 30px;
+  scrollbar-width: none;
+}
+.CommunityCard {
+  position: relative;
+  border-radius: var(--corner-radius) !important;
+  background-color: #efeeed !important;
+  width: 100%;
+  min-width: 230px;
+  border: 2px solid #dee5ec;
+}
+.CommunityCard:hover {
+  border: 2px solid #4795de !important;
+}
+.CommunityIcon {
+  border-radius: var(--corner-radius);
+}
+.CommunityName {
+  padding: 0px 0 6px 9px !important;
+}
+.MuiCardContent-root:last-child {
+  padding-bottom: 0;
+}
+.NewCommunity {
+  background-color: #dee5ec;
+  display: flex;
+  justify-content: center;
+  padding: 26px;
+  height: 100px;
+}
+.ModerateNewCommunity {
+  width: auto !important;
+}
+
+.ModeratorHeader {
+  box-shadow: 0px 2px 4px;
+  border-radius: 20px;
+}
+
+.MiddleContent {
+  display: flex;
+  margin-top: 20px;
+}
+
+.menuItems {
+  box-shadow: -2px -3px 6px #ffffff, 2px 3px 10px #00000029;
+  border-radius: 20px;
+  padding: 8px 20px 0 12px;
+  width: 230px;
+  line-height: 30px;
+  height: fit-content;
+}
+.menuItems ul {
+  padding: 0;
+  margin-bottom: 0.6rem;
+}
+.menuItems ul li {
+  list-style-type: none;
+  cursor: pointer;
+  padding: 5px 0 5px 20px;
+}
+.menuItems ul li span {
+  position: relative;
+}
+.menuItems ul li span img {
+  padding-left: 10px;
+}
+.css-1gsv261 {
+  border-bottom: 0 !important;
+}
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+  text-transform: capitalize !important;
+}
+
+.activityDropdownOption {
+  display: none;
+  position: absolute;
+  box-sizing: border-box;
+  box-shadow: 1px 2px 6px;
+  background-color: #f3f2f0;
+  border-radius: 10px;
+  min-width: 193px;
+}
+.menuItems > ul > li:hover > .activityDropdownOption {
+  display: block;
+}
+
+.MenuContent {
+  background-color: #efeeed;
+  box-shadow: 1px 2px 3px;
+  margin: 0 16px 0 20px;
+  border-radius: 20px;
+  width: 100%;
+  height: 577px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  /* scrollbar-width: none; */
+}
+.FirstOption {
+  color: #4795de;
+}
+.ModeratorIcon {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+.AddPhotoInput {
+  /* visibility: hidden */
+  display: none;
+}
+.AddPhotoLabel {
+  display: contents;
+  cursor: pointer;
+}
+.Phototimeline-modal {
+  max-width: 487px;
+  background-color: #ffffff;
+  border-radius: 25px;
+}
+.Phototimeline-modal-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.photo-preview {
+  width: 100%;
+  max-width: 427px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  color: rgba(0, 0, 0, 0.87);
+  height: 100%;
+  max-height: 248px;
+}
+.post-phototimeline-heading {
+  font-size: 17px;
+  font-weight: 600;
+}
+.photo-preview-description {
+  resize: none;
+  width: 100%;
+  max-width: 427px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.phototimeline-location-tag {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 0 0 33px;
+}
+.Advanced-phototimelinewidth {
+  max-width: 552px;
+  background-color: #ffffff;
+  border-radius: 25px;
+}
+.multifile-upload {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  max-height: 370px;
+  scrollbar-width: none;
+}
+.multiphoto-preview {
+  width: 100%;
+  max-width: 255px;
+  height: 100%;
+  max-height: 143px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  color: rgba(0, 0, 0, 0.87);
+}
+.multi-photopreviewdescription {
+  height: 100%;
+  max-height: 72px;
+}
+
+.single-multi-phototimelineimage {
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  object-fit: cover;
+}
+/* .modal-footer{
+    border: none;
+} */
+.Multiphoto-addlink {
+  position: absolute;
+  left: 3rem;
+}
+
+.Delete-Photo-icon {
+  position: absolute;
+  right: 45px;
+  top: 24px;
+  padding: 1px 0 0 4.5px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #efeeed;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.multiphoto-main {
+  position: relative;
+}
+.multiphoto-delete {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  padding: 0px 0px 0px 3px;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-color: #efeeed;
+  border: 1px solid #fff;
+}
+
+.checked-delete-photo {
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+}
+
+.DeleteTimeLineImage {
+  display: none;
+}
+.blockuser-confirmbutton {
+  background: white;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+
+  cursor: text !important;
+  text-decoration: None !important;
+}

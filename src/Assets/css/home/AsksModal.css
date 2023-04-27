@@ -1,0 +1,45 @@
+
+.my-modal .modal-content{
+    width: 707px;
+  
+    background-color: #F3F2F0;
+}
+.my-modal .ModalPosts{
+    height: 450px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color:#707070;
+}
+.my-modal .ModalFooter{
+    margin: auto;
+}
+.my-modal  .PostCommunity{
+    width: 183px;
+    height:48px;
+    margin-left: 10px;
+    border:none;
+    border-radius: 20px;
+    color:white;
+    cursor: pointer;
+}
+.my-modal .askCommunity{
+    background-color: #2168B2;
+
+}
+.my-modal .sayCommunity{
+    background-color:  #36B549;
+
+}
+.my-modal  .Message{
+    text-align: center;
+    margin-top:200px;
+    font-size:20px;
+}
+
+.loader{
+    width: 60px !important;
+    height: 60px !important;
+    position: absolute;
+    top: 44%;
+    left: 44%;
+}

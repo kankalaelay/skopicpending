@@ -1,0 +1,185 @@
+.Contributers {
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    border: solid 1px #DEE0E1;
+}
+
+.contributersProfile {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 180px;
+}
+
+.Arrow {
+    align-self: center;
+    padding: 4px;
+    color: black;
+
+    font-size:x-large;
+}
+
+.ProfileImage {
+    width: 46px;
+    height: 46px;
+    margin: 5px 10px;
+    margin-bottom: 10px;
+}
+.carousel-inner {
+    width: 90% !important;
+}
+.ShareUpdate {
+    margin: 10px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    border: solid 1px #DEE0E1;
+    font-weight: 00;
+    font-size: 20px;
+    padding:12px 26px;
+    cursor: pointer;
+    /* text-transform: capitalize; */
+}
+
+.ShareUpdate>h5 {
+    margin: 0;
+}
+
+.CreateTag {
+    margin: 10px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    border: solid 1px #DEE0E1;
+    font-weight: 00;
+    font-size: 20px;
+    padding: 12px 26px;
+    cursor: pointer;
+}
+
+.CreateTag>h5 {
+    margin:0
+}
+
+.Trending {
+    padding: 26px;
+    margin: 10px 0px 0px 0px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    border: solid 1px #DEE0E1;
+}
+
+.Trending h2 {
+    font-size: 20px;
+}
+
+.Trending p {
+    padding: 0;
+    margin: 0;
+}
+.Trending h6 {
+    color: #373334;
+    font-size: 14px;
+    font-weight: bold;
+}
+.Trending>div {
+    margin: 10px 0 0 10px;
+    clear: both;
+}
+.Seemore {
+    color: #373334;
+    font-size: 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.Seemore svg {
+    position: relative;
+    top: 0px;
+    left:4px
+}
+.asks{
+    padding: 0;
+    margin: 0 -10px;
+}
+
+.asks>li {
+    background-color: white;
+    /* display: flex; */
+    max-height: 67px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom:10px ;
+    padding: 10px;
+}
+
+.asks>li>p {
+
+    margin-left: 30px;
+    /* padding: 5px; */
+}
+
+.asksection>p {
+    padding-top: 40px;
+    
+}
+
+.trendingAsks {
+    padding: 10px;
+}
+.CreateTag>p {
+    color: black;
+}
+.askprofile{
+    display: flex;
+
+}
+
+
+
+.contributersavatar{
+    width: 46px !important;
+    height: 46px !important;
+}
+
+.avatarrow{
+    justify-content: center;
+}
+.askavatar{
+    border-radius: 10px !important;
+    width: 24px !important;
+    height: 24px !important;
+}
+.askprofilecontnet{
+    padding-left: 5px;
+}
+.askprofilecontnet>p{
+    font-size: 12px;
+    color: #373334;
+    line-height: 1.2;
+}
+.contributertick{
+    font-size: 13px;
+    color: #707070;
+}
+.contributertick>img{
+    padding-right: 4px;
+}
+@media all and (max-width: 768px) { 
+    .rightSidebar{
+    padding: 10px;
+    }
+}

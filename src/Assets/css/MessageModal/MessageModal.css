@@ -1,0 +1,13 @@
+#MessageModal .modal-content{
+    padding:0;
+margin: auto;
+text-align: center;
+width: 800px !important;
+min-height: 50px;
+}
+#MessageModal .title{
+    font-weight: 500;
+    margin: auto;
+    padding: 10px;
+    font-size: 15px;
+}

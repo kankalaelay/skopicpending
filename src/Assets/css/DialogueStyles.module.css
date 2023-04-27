@@ -1,0 +1,44 @@
+.DialogBox{
+    position: fixed; 
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(122,121,120,0.5);
+    opacity: 1;
+    visibility: visible;
+    font-family:  Helvetica, sans-serif;
+    -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+    -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+    transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+.Container{
+    display: block;
+    width: 705px;
+    margin:  20% auto;
+    z-Index: 999;
+    background-color:#FFFFFF;
+    padding: 10px 20px 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+}
+
+.Close{
+    margin-bottom: 8px;
+    padding: 3px 8px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    align-self: flex-end;
+    background-color: #F3F2F0;
+    border:none;
+    margin-left: 95%;
+}
+
+.DialogBody{
+    text-align: center;
+}

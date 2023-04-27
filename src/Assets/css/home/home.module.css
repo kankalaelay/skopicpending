@@ -1,0 +1,62 @@
+.Home {
+    background-color: #EFEEED;
+    /* margin: 0; */
+    /* height: 100vh; */
+    /* max-width: 1300px; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* padding: 0 10px; */
+    /* padding: 0; */
+}
+
+.container {
+    display: flex;
+
+}
+.notifications{
+    display: flex;
+    padding: 10px 0px 10px 15px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    position: absolute;
+    right: 0;
+   box-shadow: 2px 3px 6px;
+    z-index: 555;
+   
+
+}
+.notificationscroll{
+    padding-right: 7px;
+    overflow-y: scroll;
+    height: 818px;
+    scrollbar-width: thin;
+    scrollbar-color:#6b71c9;
+    width: -moz-available;
+}
+.notificationscroll::-webkit-scrollbar{
+    
+    width: 4px;
+        
+    }
+    .notificationscroll::-webkit-scrollbar-thumb {
+        background: #707070; 
+        border-radius: 10px;
+        
+      }
+      .notificationscroll::-webkit-scrollbar-thumb:hover {
+        background: #6b71c9; 
+      }
+@media all and (max-width: 768px) {
+    .homeRow {
+        display: flex;
+    }
+    .homeRow .leftColumn{
+        order:1;
+    }
+    .homeRow .rightColumn{
+        order:2;
+    }
+    .homeRow .midColumn{
+        order:0;
+    }
+}

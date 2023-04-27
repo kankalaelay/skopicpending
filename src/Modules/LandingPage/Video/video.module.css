@@ -1,0 +1,26 @@
+.Intro{
+    width: 45%;
+   height: 740px;
+}
+.Intro img{
+    width:100%;
+    height:100%;
+}
+@media (max-width:1024px){
+    .Intro{
+        width: 45%;
+        height:110vh;
+    }
+}
+@media (max-width:768px){
+    .Intro{
+        width: 45%;
+        height:110vh;
+    }
+}
+@media (max-width:425px){
+    .Intro{
+        display: none;
+
+    }
+}
