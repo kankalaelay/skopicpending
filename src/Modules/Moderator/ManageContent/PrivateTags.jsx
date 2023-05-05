@@ -5,6 +5,9 @@ import { useDispatch } from "react-redux";
 import * as moderatorActions from "../../../store/actions/Moderator/moderatoractions";
 import { useState } from "react";
 import styles from "../../../Assets/css/home/post.module.css";
+import follow from "../../../Assets/images/follow.svg";
+import unfollow from "../../../Assets/images/unfollow.svg";
+import feedstyles from "../../../Assets/css/home/feedpost.module.css";
 
 import ProfilePic from "../../../Assets/images/profileimage.png";
 import LocationPin from "../../../Assets/images/locationpinchildpost.png";
@@ -22,7 +25,9 @@ import * as childSayActions from "../../../store/actions/searchactions/childsayA
 import * as feedactions from "../../../store/actions/feedactions/feedActionCreator";
 import PrivateTagsReducer from "../../../store/reducer/ModeratorReducer/PrivateTagsReducer";
 import { styled } from "@mui/material/styles";
-import { Typography, Avatar, Divider } from "@mui/material";
+import { Typography, Avatar, Divider, Button } from "@mui/material";
+import ChildSay from "../../Activity/Activites/ChildSay";
+import ActivityPost from "../../Activity/ActivityPost";
 
 const Container = styled("div")({
   backgroundColor: "#fff",
@@ -59,13 +64,20 @@ const NameContainer = styled("div")({
 const PrivateTags = () => {
   const [isFeed, setFeed] = useState([]);
   const [isFollow, setFollow] = useState("");
+  const [Message, setMessage] = useState("");
+  const [editId, seteditId] = useState(-10);
+  const [followingid, setfollowingId] = useState("");
+
+  const [isOpen, setIsOpen] = useState();
+
   var followstatusparams = "";
   var likestatusparams = "";
-  const [Message, setMessage] = useState("");
-  // const [data,setData]=useState([])
+
+  var profileImagePath = "http://dev.skopic.com:9090/skopicimage";
 
   const data =
     useSelector((state) => state.PrivateTagsReducer.PrivateTagsData) || [];
+  console.log("Data: ", data);
   const userDetails = useSelector((state) => state.SignInReducer.userDetails);
 
   const { userData } = userDetails;
@@ -107,20 +119,8 @@ const PrivateTags = () => {
   };
 
   const followunfollow = (id, followstatus) => {
-    var followid = `1${id}`;
-    var unfollowid = `0${id}`;
-    // let FeedDataDelete = `FeedDataDelete${id}`
-    if (followstatus === "isFollow=1") {
-      document.getElementById(followid).style.display = "none";
-      document.getElementById(unfollowid).style.display = "block";
-      setFollow("followed");
-    } else {
-      setFollow("unfollowed");
-      document.getElementById(unfollowid).style.display = "none";
-      document.getElementById(followid).style.display = "block";
-      // document.getElementById(FeedDataDelete).style.display = "none"
-    }
-    followstatusparams = `?messageID=${id}&&${followstatus}`;
+    // props.updateList(id, followstatus);
+    let followstatusparams = `?messageID=${id}&&${followstatus}`;
     dispatch(feedactions.fetchFollowData(followstatusparams));
   };
 
@@ -173,7 +173,6 @@ const PrivateTags = () => {
           <div style={{ marginTop: "6px" }}>
             {item.followCount} followers. {item.hashTagType}
           </div>
-
           <Status
             style={{
               backgroundColor: currStatus(item.msg_message_status_s).color,
@@ -187,10 +186,68 @@ const PrivateTags = () => {
               justifyContent: "space-around",
             }}
           >
-            <div>say</div>
-            <div onClick={() => followunfollow(item.User_ID)}>follow</div>
-            <div onClick={""}>invite</div>
+            <Button
+              style={{
+                background: "transparent",
+                border: "none",
+                boxShadow: "none",
+                fontSize: "small",
+                color: "inherit",
+                "&:hover": {
+                  background: "transparent",
+                },
+              }}
+              onClick={() => {
+                seteditId(item.messageId == editId ? -10 : item.messageId);
+              }}
+            >
+              say
+            </Button>
+
+            <Button
+              style={{
+                background: "transparent",
+                border: "none",
+                boxShadow: "none",
+                fontSize: "small",
+                color: "inherit",
+                "&:hover": {
+                  background: "transparent",
+                },
+              }}
+              onClick={() =>
+                followunfollow(
+                  item.messageId,
+                  item.userFollowStatus == "1" ? "isFollow=0" : "isFollow=1"
+                )
+              }
+            >
+              {item.userFollowStatus == "1" ? "unfollow" : "Follow"}
+            </Button>
+
+            <span
+              style={{
+                background: "transparent",
+                border: "none",
+                boxShadow: "none",
+                fontSize: "small",
+                color: "black",
+                "&:hover": {
+                  background: "transparent",
+                },
+              }}
+              onClick={""}
+            >
+              invite
+            </span>
           </div>
+          {item.messageId == editId && (
+            <ChildSay item={{ ...item, id: item.messageId }} />
+          )}
+
+          {/* {item.User_ID == followingid&& (
+            <ActivityPost item={{...item,id:item.User_ID}}
+          )} */}
         </Container>
       ))}
     </>
