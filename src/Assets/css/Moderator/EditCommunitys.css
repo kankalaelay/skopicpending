@@ -16,7 +16,7 @@
   max-width: 250px;
   /* position: relative; */
   border-radius: 15px !important;
-  background-color: #EFEEED !important;
+  background-color: #efeeed !important;
   width: 100%;
 }
 
@@ -26,7 +26,7 @@
   border-radius: 10px;
   outline: none;
   border: 1px solid;
-  border-color: #B5B5B5;
+  border-color: #b5b5b5;
   padding: 6px;
   margin: 5px 0 0px 0px;
   overflow: auto;
@@ -46,15 +46,14 @@
   position: absolute;
   right: 5px;
   top: 5px;
-  padding: 2px 0 0 8px;
+  /* padding: 2px 0 0 8px; */
   height: 30px;
   width: 30px;
   border-radius: 50%;
-  background-color: #EFEEED;
-  border: 1px solid #fff;
-  cursor: pointer;
+  background-color: #efeeed;
+  /* border: 1px solid #fff;
+  cursor: pointer; */
 }
-
 
 .PhotoEditDeleteOptions {
   display: none;
@@ -70,11 +69,11 @@
   left: 75%;
 }
 
-.editPhotoDropDown:hover+.PhotoEditDeleteOptions {
+.editPhotoDropDown:hover + .PhotoEditDeleteOptions {
   display: block;
 }
 
-.PhotoEditDeleteOptions>li>img {
+.PhotoEditDeleteOptions > li > img {
   padding: 0 10px 2px 0;
 }
 
@@ -92,11 +91,10 @@
 .AddPhotoLink {
   display: flex;
   gap: 7px;
-  color: #4795DE;
+  color: #4795de;
   font-weight: bold;
   cursor: pointer;
 }
-
 
 .read-or-hide {
   color: #333333;
@@ -104,13 +102,12 @@
 }
 
 .initial-Description {
-  color: #A9A9A9;
+  color: #a9a9a9;
 }
 
 .textColor {
   color: #707070;
 }
-
 
 /* alert */
 .photo-overcount-alert {
@@ -143,7 +140,6 @@
 .click-here {
   color: blue;
   cursor: pointer;
-  ;
 }
 
 /* Community Info */
@@ -155,11 +151,10 @@
   position: relative;
   left: 2%;
   margin-bottom: 0.5%;
-
 }
 
 .communityInfo-input p span {
-  color: #4795DE
+  color: #4795de;
 }
 
 .communityNameInput {

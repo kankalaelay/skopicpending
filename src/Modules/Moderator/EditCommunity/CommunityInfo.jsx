@@ -7,7 +7,7 @@ import { Button as MuiButton, Box, Dialog } from "@mui/material";
 import PolygonMap from "./Polygon";
 
 import { styled } from "@mui/material/styles";
-import MapIcon from "../../../Assets/images/MapIcon.svg"
+import MapIcon from "../../../Assets/images/MapIcon.svg";
 
 const Button = styled(MuiButton)({
   paddingLeft: "25px",
@@ -54,8 +54,9 @@ const CommunityInfoInput = ({
 
   return (
     <div
-      className={`${parentStyleClass ? parentStyleClass : "communityInfo-input"
-        }`}
+      className={`${
+        parentStyleClass ? parentStyleClass : "communityInfo-input"
+      }`}
     >
       <form>
         <p>
@@ -87,9 +88,10 @@ const CommunityInfoInput = ({
 };
 const CommunityInfo = (props) => {
   const classes = useStyles();
-  const community_tenant_list = useSelector(
-    (state) => state.EditCommunityReducer.communityTenantList?.tenantList
-  );
+  const community_tenant_list =
+    useSelector(
+      (state) => state.EditCommunityReducer.communityTenantList?.tenantList
+    ) || [];
   const tenant_list = useSelector(
     (state) => state.EditCommunityReducer.communityTenantList?.statesList
   );
@@ -102,19 +104,13 @@ const CommunityInfo = (props) => {
     const filtered = community_tenant_list.filter(
       (item) => item.id == props.tenantId
     )[0];
-    setEditCommunityItem(filtered)
+    if (filtered) {
+      setEditCommunityItem(filtered);
+    }
   }, [community_tenant_list, props.tenantId]);
 
-  const {
-    name,
-    description,
-    city,
-    country,
-    state,
-    address1,
-    zipcode,
-  } = editCommunityItem;
-
+  const { name, description, city, country, state, address1, zipcode } =
+    editCommunityItem;
 
   useEffect(() => {
     let countryArray = [];
@@ -221,7 +217,7 @@ const CommunityInfo = (props) => {
           onClose={handleClose}
           classes={{ paperWidthSm: classes.paperWidthSm }}
         >
-          <PolygonMap {...editCommunityItem}  onMapClose={handleClose}/>
+          <PolygonMap {...editCommunityItem} onMapClose={handleClose} />
         </Dialog>
       ) : null}
     </>
