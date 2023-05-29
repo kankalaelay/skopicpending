@@ -3,6 +3,8 @@ import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import { useSelector, useDispatch } from "react-redux";
+import { Menu, MenuItem, IconButton, Checkbox } from "@mui/material";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import ModeratorLocationIcon from "../../../Assets/images/moderatorLocationIcon.svg";
 import EditPhotoDropdown from "../../../Assets/images/EditPhotoDropdown.svg";
 import Edit from "../../../Assets/images/edit.svg";
@@ -19,7 +21,9 @@ import { Button, Modal } from "react-bootstrap";
 import "primeflex/primeflex.css";
 import ModeratorDescriptionValidation from "./ModeratorDescriptionValidation";
 import ModeratorAlert from "../ReusableModeratorComponents/ModeratorAlert";
-import { Checkbox, CircularProgress, ImageList } from "@mui/material";
+// import { Checkbox, CircularProgress, ImageList } from "@mui/material";
+
+import { usePhotoTimeLine } from "../../../Hooks/usePhotoTimeLine";
 
 const ReadMore = ({ children }) => {
   const text = children;
@@ -62,6 +66,8 @@ export const PhotoInfo = ({
   const timeLineImagesList = useSelector(
     (state) => state.EditCommunityReducer.timeLineImagesList
   );
+
+  const { deletePhotoTimeLine } = usePhotoTimeLine();
   const imageServerURL = "http://dev.skopic.com:9090/skopicimage/";
 
   const [isDescriptionText, setDescriptionText] = useState("");
@@ -116,10 +122,14 @@ export const PhotoInfo = ({
                 ) : (
                   <>
                     <span className="editPhotoDropDown">
-                      <img src={EditPhotoDropdown} />
+                      {/* <img src={EditPhotoDropdown} /> */}
+                      <DropDown
+                        image={ImagesList}
+                        deletePhoto={deletePhotoTimeLine}
+                      />
                     </span>
 
-                    <div className="PhotoEditDeleteOptions">
+                    {/* <div className="PhotoEditDeleteOptions">
                       <li>
                         <img src={Edit} />
                         Edit photo
@@ -128,7 +138,7 @@ export const PhotoInfo = ({
                         <img src={Delete} />
                         Delete Photo
                       </li>
-                    </div>
+                    </div> */}
                   </>
                 )}
               </Card>
@@ -256,7 +266,8 @@ const Phototimeline = () => {
   };
 
   const onPhotoUpload = (e) => {
-    setPhotoUpload(URL.createObjectURL(e.target.files[0]));
+    // setPhotoUpload(URL.createObjectURL(e.target.files[0]));
+    setPhotoUpload(e.target.files[0]);
     setModalShow(true);
     // console.log(URL.createObjectURL(e.target.files[0]))
   };
@@ -316,10 +327,16 @@ function AddPhotoModal(props) {
   const [isFile, setFile] = useState([]);
   const [isSingleFile, setisSingleFile] = useState(true);
   const [isOverCountLimit, setOverCountLimit] = useState(false);
-  const [isDescriptionText, setDescriptionText] = useState("");
+  const [isDescriptionText, setDescriptionText] = useState([]);
   const [setLocationSelect, isLocationSelect] = React.useState(null);
   const [isLat, setLat] = React.useState(null);
   const [isLng, setLng] = React.useState(null);
+
+  const updateDescription = (message, id) => {
+    let des = [...isDescriptionText];
+    des[id] = message;
+    setDescriptionText([...des]);
+  };
 
   useEffect(() => {
     if (!props.modalShow) {
@@ -331,19 +348,25 @@ function AddPhotoModal(props) {
     let singleFile = [];
     if (props.isPhotoUpload) {
       singleFile.push(props.isPhotoUpload);
-      setFile([...isFile, singleFile]);
+      setFile([...isFile, props.isPhotoUpload]);
       setisSingleFile(true);
     }
   }, [props.isPhotoUpload]);
 
-  let fileObj = [];
-  let fileArray = [];
+  // let fileObj = [];
+  // let fileArray = [];
   const uploadMultipleFiles = (e) => {
-    fileObj.push(e.target.files);
-    for (let i = 0; i < fileObj[0].length; i++) {
-      fileArray.push(URL.createObjectURL(fileObj[0][i]));
+    let fileArray = [];
+    // console.log("uploading", isFile);
+    // console.log("uploading2", e.target.files);
+    // fileObj.push(e.target.files);
+    // for (let i = 0; i < fileObj[0].length; i++) {
+    //   fileArray.push(URL.createObjectURL(fileObj[0][i]));
+    // }
+    for (let i = 0; i < e.target.files.length; i++) {
+      fileArray.push(e.target.files[i]);
     }
-    setFile([...isFile, fileArray]);
+    setFile([...isFile, ...fileArray]);
     setisSingleFile(false);
     // this.setState({ file: this.fileArray })
   };
@@ -352,9 +375,23 @@ function AddPhotoModal(props) {
     console.log(isFile);
   };
 
+  const updateText = (text) => {
+    setDescriptionText([...text]);
+  };
+
   const onPhotoRemove = (index) => {
-    let multiphotoremove = `multiphoto${index}`;
-    document.getElementById(multiphotoremove).style.display = "none";
+    const files = [...isFile];
+    files.splice(index, 1);
+    const description = [...isDescriptionText];
+    description.splice(index, 1);
+    setDescriptionText(description);
+    setFile(files);
+    // updateText(description);
+    // setDescriptionText((des) => description);
+    // setFile((file) => files);
+    console.log(isFile, isDescriptionText);
+    // let multiphotoremove = `multiphoto${index}`;
+    // document.getElementById(multiphotoremove).style.display = "none";
   };
 
   let imgPreview;
@@ -363,15 +400,35 @@ function AddPhotoModal(props) {
     e.preventDefault();
     if (userDetails && Object.keys(userDetails).length !== 0) {
       for (let i = 0; i < isFile.length; i++) {
-        dispatch(
-          moderatorActions.uploadPhototoPhototimeline(
-            `tenantId=${userDetails.userData.tenantId}&&img="${isFile[i]}"&&tmlPhotoDesc=${isDescriptionText}&&locName=""`
-          )
+        const image = isFile[i];
+        let formData = new FormData();
+        formData.append("img", image);
+        formData.append(
+          "tmlPhotoDesc",
+          isDescriptionText[i] ? isDescriptionText[i] : ""
         );
-        // console.log(`tenantId=${userDetails.userData.tenantId}&&img=${isFile[i][0]}&&tmlPhotoDesc=${isDescriptionText}&&locName=${setLocationSelect}`)
+        formData.append("tmlPhotoLoc", "");
+        formData.append("locName", "");
+        formData.append("tenantId", userDetails.userData.tenantId);
+        dispatch(
+          moderatorActions.uploadPhototoPhototimeline({
+            formData,
+            id: userDetails.userData.tenantId,
+          })
+        );
       }
     }
-    // for(let uploadPhoto=0;)
+    // e.preventDefault();
+    // if (userDetails && Object.keys(userDetails).length !== 0) {
+    //   for (let i = 0; i < isFile.length; i++) {
+    //     dispatch(
+    //       moderatorActions.uploadPhototoPhototimeline(
+    //         `tenantId=${userDetails.userData.tenantId}&&img="${isFile[i]}"&&tmlPhotoDesc=${isDescriptionText}&&locName=""`
+    //       )
+    //     );
+    //     console.log(`tenantId=${userDetails.userData.tenantId}&&img=${isFile[i][0]}&&tmlPhotoDesc=${isDescriptionText}&&locName=${setLocationSelect}`)
+    //   }
+    // }
   };
 
   if (props.isPhotoUpload) {
@@ -409,11 +466,10 @@ function AddPhotoModal(props) {
 
           <Modal.Body className="Phototimeline-modal-body">
             <div>
-              {isSingleFile ? (
+              {/* {isSingleFile ? (
                 <div>
                   <div className="photo-preview">{imgPreview}</div>
                   <div>
-                    {/* <InputTextarea placeholder="Add a description" className='photo-preview-description' /> */}
                     <ModeratorDescriptionValidation
                       setOverCountLimit={setOverCountLimit}
                       postbutton="postbutton"
@@ -422,10 +478,6 @@ function AddPhotoModal(props) {
                       setLat={setLat}
                       setLng={setLng}
                     />
-                    {/* <div className='phototimeline-location-tag'>
-                                                <LocationTag />
-                                                <div><label>0/200</label></div>
-                                            </div> */}
                     <span
                       className="Delete-Photo-icon"
                       onClick={() => onPhotoRemove()}
@@ -434,40 +486,40 @@ function AddPhotoModal(props) {
                     </span>
                   </div>
                 </div>
-              ) : (
-                <div className="multifile-upload">
-                  {(isFile || []).map((url, index) => (
-                    <div className="multiphoto-main" id={`multiphoto${index}`}>
-                      <div className="multiphoto-preview">
-                        <img
-                          src={url}
-                          alt="..."
-                          className="single-multi-phototimelineimage"
-                        />
-                      </div>
-                      <div>
-                        <ModeratorDescriptionValidation
-                          index={index}
-                          setOverCountLimit={setOverCountLimit}
-                          postbutton="postbutton"
-                          setDescriptionText={setDescriptionText}
-                          isLocationSelect={isLocationSelect}
-                          setLat={setLat}
-                          setLng={setLng}
-                        />
-                        {/* <InputTextarea placeholder="Add a description" className='photo-preview-description multi-photopreviewdescription' /> */}
-
-                        <span
-                          className="multiphoto-delete"
-                          onClick={() => onPhotoRemove(index)}
-                        >
-                          <img src={Deletephoto} alt="remove" />
-                        </span>
-                      </div>
+              ) : ( */}
+              <div className="multifile-upload">
+                {(isFile || []).map((url, index) => (
+                  <div className="multiphoto-main" id={`multiphoto${index}`}>
+                    <div className="multiphoto-preview">
+                      <img
+                        src={URL.createObjectURL(url)}
+                        alt="..."
+                        className="single-multi-phototimelineimage"
+                      />
                     </div>
-                  ))}
-                </div>
-              )}
+                    <div>
+                      <ModeratorDescriptionValidation
+                        index={index}
+                        setOverCountLimit={setOverCountLimit}
+                        postbutton="postbutton"
+                        setDescriptionText={updateDescription}
+                        isLocationSelect={isLocationSelect}
+                        setLat={setLat}
+                        setLng={setLng}
+                      />
+                      {/* <InputTextarea placeholder="Add a description" className='photo-preview-description multi-photopreviewdescription' /> */}
+
+                      <button
+                        className="multiphoto-delete"
+                        onClick={() => onPhotoRemove(index)}
+                      >
+                        <img src={Deletephoto} alt="remove" />
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              {/* )} */}
             </div>
           </Modal.Body>
           <Modal.Footer>
@@ -495,3 +547,55 @@ function AddPhotoModal(props) {
     </React.Fragment>
   );
 }
+
+const DropDown = (props) => {
+  const [anchorEl, setAnchorEl] = useState(null);
+  // const [editSay, setEditSay] = useState(false);
+  const { image, deletePhoto } = props;
+  // console.log(image);
+  // const [message, setMessage] = useState(item.Message);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+  // const deleteSay = (id) => {
+  //   handleClose();
+  //   deleteChildSay(id);
+  // };
+  // const openEditSay = (id) => {
+  //   handleClose();
+  //   setEditSay(true);
+  // };
+  return (
+    <div>
+      <IconButton onClick={handleClick} size="small">
+        <KeyboardArrowDownIcon />
+      </IconButton>
+      <Menu
+        id="basic-menu"
+        open={open}
+        anchorEl={anchorEl}
+        onClose={handleClose}
+        MenuListProps={{
+          "aria-labelledby": "basic-button",
+        }}
+      >
+        <MenuItem onClick={() => {}}>
+          <img src={Edit} alt="Editpng" style={{ marginRight: "6px" }} /> Edit
+          Post
+        </MenuItem>
+        <MenuItem
+          onClick={() => {
+            deletePhoto(image);
+          }}
+        >
+          <img src={Delete} alt="Editpng" style={{ marginRight: "6px" }} />{" "}
+          Delete Post
+        </MenuItem>
+      </Menu>
+    </div>
+  );
+};

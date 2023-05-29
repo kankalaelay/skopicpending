@@ -14,10 +14,9 @@ const PrivateTagsReducer = (state = initialState, action) => {
     case allActions.FETCH_PRIVATE_TAG_DATA:
       return { ...initialState };
     case allActions.RECIEVE_PRIVATE_TAG_DATA:
-
       return {
         ...state,
-        PrivateTagsData: [...action.payload.privateTagList],
+        PrivateTagsData: [...action.payload?.privateTagList],
 
         isLoaded: true,
       };
